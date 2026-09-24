@@ -108,6 +108,13 @@
       border-radius: 16px;
     }
 
+    /* Membership button shares size but has a green pulse */
+    .join-btn {
+      width: clamp(48px, 5vw, 72px);
+      height: clamp(48px, 5vw, 72px);
+      border-radius: 16px;
+    }
+
   /* 🍬 Jelly Base */
   .jelly-btn {
       background: linear-gradient(145deg, #22D3EE, #06B6D4);
@@ -151,6 +158,17 @@
       inset: 0;
       border-radius: 16px;
       background: rgba(192, 132, 252, 0.42);
+      z-index: -1;
+      animation: pulse-ring 2s infinite;
+    }
+
+    /* Green pulse for the membership button */
+    .join-btn::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 16px;
+      background: rgba(74, 222, 128, 0.42);
       z-index: -1;
       animation: pulse-ring 2s infinite;
     }
