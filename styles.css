@@ -123,19 +123,30 @@
       border-radius: 16px;
     }
 
-    /* Floating social links under the QR button */
+    /* Floating social links under the QR button, each in its brand color */
     .social-float-btn {
       width: clamp(36px, 4vw, 44px);
       height: clamp(36px, 4vw, 44px);
       border-radius: 50%;
-      background: #0F172A;
       box-shadow: 0 6px 16px rgba(15, 23, 42, 0.3);
       transition: all 0.25s ease;
     }
 
     .social-float-btn:hover {
-      background: linear-gradient(145deg, #22D3EE, #C084FC);
-      transform: scale(1.08);
+      transform: scale(1.1);
+      filter: brightness(1.12);
+    }
+
+    .social-float-btn.social-x {
+      background: #000000;
+    }
+
+    .social-float-btn.social-instagram {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    }
+
+    .social-float-btn.social-linkedin {
+      background: #0A66C2;
     }
 
   /* 🍬 Jelly Base */
