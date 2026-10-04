@@ -1,7 +1,7 @@
 let currentStep = 0;
 const roleData = {
   student: {
-    eyebrow: "For Students",
+    eyebrow: "For Women Students",
     title: "Turn learning into visible proof of capability",
     summary: "Build a portfolio that goes beyond marksheets with projects, verified skills, and a clearer path to opportunity.",
     highlights: [
@@ -12,7 +12,7 @@ const roleData = {
     outcome: "Move from learning to employability with a profile that shows what you can actually do."
   },
   educator: {
-    eyebrow: "For Educators",
+    eyebrow: "For Women Mentors & Educators",
     title: "Extend your impact beyond the classroom",
     summary: "Mentor learners in a more outcome-driven way by validating real work, tracking growth, and making your guidance visible.",
     highlights: [
@@ -25,7 +25,7 @@ const roleData = {
   employer: {
     eyebrow: "For Employers",
     title: "Hire from evidence, not just resumes",
-    summary: "Discover emerging talent through demonstrated skills, educator validation, and project-based proof of potential.",
+    summary: "Discover emerging women talent through demonstrated skills, educator validation, and project-based proof of potential.",
     highlights: [
       "Find candidates with visible, verified capabilities",
       "Reduce screening effort with stronger signal upfront",
