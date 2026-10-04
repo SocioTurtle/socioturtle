@@ -34,11 +34,17 @@
         <span class="text-xl font-semibold text-light">SocioTurtle</span>
       </div>
 
-      <nav class="hidden md:flex space-x-8">
+      <nav class="hidden md:flex items-center space-x-8">
         <!-- <button onclick="showPage('home')" class="nav-link font-medium hover:text-primary">Home</button> -->
         <button onclick="showPage('about')" class="nav-link font-medium hover:text-primary">About Us</button>
         <!-- <button onclick="showPage('testimonials')" class="nav-link font-medium hover:text-primary">Testimonials</button> -->
         <button onclick="showPage('contact')" class="nav-link font-medium hover:text-primary">Contact Us</button>
+        <a href="https://bhau.org/" target="_blank" rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full pl-1.5 pr-3 py-1 hover:bg-white/20 transition">
+          <img src="./images/bhau-institute-logo.jpg" alt="" width="480" height="420"
+            class="h-6 w-6 rounded-full object-contain bg-white" loading="lazy" decoding="async">
+          <span class="text-xs text-white/90">Incubated at COEP BHAU Institute</span>
+        </a>
       </nav>
 
       <button class="md:hidden text-dark" id="menu-toggle">
@@ -53,6 +59,11 @@
         <button onclick="showPage('about')" class="nav-link font-medium py-2">About Us</button>
         <!-- <button onclick="showPage('testimonials')" class="nav-link font-medium py-2">Testimonials</button> -->
         <button onclick="showPage('contact')" class="nav-link font-medium py-2">Contact Us</button>
+        <a href="https://bhau.org/" target="_blank" rel="noopener noreferrer" class="nav-link font-medium py-2 flex items-center gap-2">
+          <img src="./images/bhau-institute-logo.jpg" alt="" width="480" height="420"
+            class="h-5 w-5 rounded-full object-contain bg-white" loading="lazy" decoding="async">
+          Incubated at COEP BHAU Institute
+        </a>
       </div>
     </div>
   </header>
@@ -91,20 +102,6 @@
           <button onclick="goToEcosystem()" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold">
             See How It Works
           </button>
-        </div>
-
-        <!-- 🏫 INCUBATION BADGE -->
-        <div class="flex justify-center">
-          <a href="https://bhau.org/" target="_blank" rel="noopener noreferrer"
-            class="inline-flex items-center gap-3 bg-white rounded-xl shadow-md px-5 py-3 hover:shadow-lg transition">
-            <img src="./images/bhau-institute-logo.jpg" alt="COEP BHAU Institute logo" width="480" height="420"
-              class="h-10 w-10 object-contain" loading="lazy" decoding="async">
-            <span class="text-sm text-gray-700">
-              <span class="block text-gray-500">Incubated at</span>
-              <span class="font-semibold">COEP BHAU Institute</span>
-              <span class="text-gray-500">since June 2026</span>
-            </span>
-          </a>
         </div>
 
         <!-- 👥 ROLES -->
@@ -343,21 +340,6 @@
                 View Anurag on LinkedIn
               </a>
             </div>
-          </div>
-        </div>
-        <!-- Backed By -->
-        <div class="bg-white rounded-xl shadow-md p-8 mb-16">
-          <h2 class="text-3xl font-bold mb-6 text-center">Backed By</h2>
-          <div class="flex justify-center">
-            <a href="https://bhau.org/" target="_blank" rel="noopener noreferrer"
-              class="inline-flex items-center gap-4 bg-gray-50 border border-gray-100 rounded-lg px-6 py-4 hover:shadow transition">
-              <img src="./images/bhau-institute-logo.jpg" alt="COEP BHAU Institute logo" width="480" height="420"
-                class="h-14 w-14 object-contain" loading="lazy" decoding="async">
-              <span class="text-gray-700">
-                <span class="block font-semibold text-lg">COEP BHAU Institute</span>
-                <span class="text-sm text-gray-500">Incubation partner since June 2026</span>
-              </span>
-            </a>
           </div>
         </div>
         <!-- Core Values -->
@@ -764,6 +746,11 @@
         </a>
         <a href="https://www.linkedin.com/in/socioturtle/" class="hover:text-white">
           <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://bhau.org/" target="_blank" rel="noopener noreferrer" title="Incubated at COEP BHAU Institute"
+          aria-label="Incubated at COEP BHAU Institute (opens bhau.org)" class="hover:opacity-80">
+          <img src="./images/bhau-institute-logo.jpg" alt="" width="480" height="420"
+            class="h-5 w-5 rounded-full object-contain bg-white" loading="lazy" decoding="async">
         </a>
       </div>
       <!-- Download icon -->
