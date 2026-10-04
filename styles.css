@@ -123,6 +123,21 @@
       border-radius: 16px;
     }
 
+    /* Floating social links under the QR button */
+    .social-float-btn {
+      width: clamp(36px, 4vw, 44px);
+      height: clamp(36px, 4vw, 44px);
+      border-radius: 50%;
+      background: #0F172A;
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.3);
+      transition: all 0.25s ease;
+    }
+
+    .social-float-btn:hover {
+      background: linear-gradient(145deg, #22D3EE, #C084FC);
+      transform: scale(1.08);
+    }
+
   /* 🍬 Jelly Base */
   .jelly-btn {
       background: linear-gradient(145deg, #22D3EE, #06B6D4);
