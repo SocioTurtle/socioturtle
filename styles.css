@@ -166,7 +166,8 @@
       filter: blur(4px);
   }
 
-    /* Green pulse for the membership button */
+    /* Green glow for the membership button — calm by default, a single
+       pulse on hover rather than looping forever. */
     .join-btn::after {
       content: "";
       position: absolute;
@@ -174,12 +175,17 @@
       border-radius: 16px;
       background: rgba(74, 222, 128, 0.42);
       z-index: -1;
-      animation: pulse-ring 2s infinite;
+      opacity: 0.6;
+    }
+
+    .membership-cta:hover .join-btn::after {
+      animation: pulse-ring 1s ease-out;
     }
 
     /* Flashing call-to-action badge next to the register button — a
-       tilted "sticker" look with a gradient and a bouncy wiggle, sized
-       to match the jelly button it points at. */
+       tilted "sticker" look with a gradient, sized to match the jelly
+       button it points at. Holds a static tilt by default and wiggles
+       once when the button is hovered, instead of looping forever. */
     .register-flash-badge {
       position: absolute;
       right: calc(100% + 10px);
@@ -203,7 +209,12 @@
       box-shadow: 0 8px 18px rgba(192, 132, 252, 0.5);
       pointer-events: none;
       transform-origin: center;
-      animation: flash-badge 1.3s ease-in-out infinite;
+      transform: translateY(-50%) rotate(-6deg);
+      transition: transform 0.25s ease;
+    }
+
+    .membership-cta:hover .register-flash-badge {
+      animation: flash-badge 0.6s ease-in-out;
     }
 
     @keyframes flash-badge {
@@ -800,10 +811,16 @@ html {
   .about-founder-note,
   .about-founder-journey-item,
   .announcement-banner,
-  .announcement-dot {
+  .announcement-dot,
+  .register-flash-badge,
+  .join-btn::after {
     animation: none !important;
     transition: none !important;
     transform: none !important;
+  }
+
+  .register-flash-badge {
+    transform: translateY(-50%) rotate(-6deg) !important;
   }
 
   .announcement-banner {
