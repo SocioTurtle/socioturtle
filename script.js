@@ -39,9 +39,6 @@ const roleData = {
 window.onload = () => {
   const firstBtn = document.querySelector(".role-btn");
   switchRole("student", firstBtn);
-  if (isMobile()) {
-  document.querySelector('.qr-btn i').className = 'fas fa-download text-white text-xl';
-}
 };
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -89,26 +86,6 @@ function goToEcosystem() {
       ecosystemSection.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   });
-}
-
-function isMobile() {
-  return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-}
-
-function handleQRClick() {
-  const appLink = "https://drive.google.com/file/d/1mgdjWcMFJZ6lZL--J8pxYVlhmP9PdM-P/view";
-
-  if (isMobile()) {
-    // Direct open on mobile
-    window.location.href = appLink;
-  } else {
-    // Show QR on desktop
-    toggleQR();
-  }
-}
-
-function toggleQR() {
-  document.getElementById("qrPopup").classList.toggle("hidden");
 }
 
 // Registration modal logic
