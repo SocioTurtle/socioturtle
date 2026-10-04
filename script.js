@@ -52,6 +52,11 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("mobile-menu").classList.toggle("hidden");
     });
   }
+
+  const targetPage = window.location.hash.slice(1);
+  if (targetPage && document.getElementById(targetPage)?.classList.contains("page")) {
+    showPage(targetPage);
+  }
 });
 
 function showPage(pageId) {
