@@ -784,6 +784,39 @@ html {
 .stagger.visible > *:nth-child(3) { transition-delay: 0.3s; }
 .stagger.visible > *:nth-child(4) { transition-delay: 0.4s; }
 
+/* 📣 Announcement banner — shimmering gradient + pulsing dot to draw the eye */
+.announcement-banner {
+  background: linear-gradient(110deg, #0EA5B7, #22D3EE, #C084FC, #22D3EE, #0EA5B7);
+  background-size: 300% 100%;
+  animation: banner-shimmer 6s ease-in-out infinite;
+  transition: filter 0.2s ease;
+}
+
+.announcement-banner:hover,
+.announcement-banner:focus-visible {
+  filter: brightness(1.08);
+}
+
+@keyframes banner-shimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.announcement-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  animation: announcement-pulse 1.8s ease-out infinite;
+}
+
+@keyframes announcement-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6); }
+  70% { box-shadow: 0 0 0 8px rgba(255, 255, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -794,10 +827,16 @@ html {
   .about-founder-aurora,
   .about-founder-frame,
   .about-founder-note,
-  .about-founder-journey-item {
+  .about-founder-journey-item,
+  .announcement-banner,
+  .announcement-dot {
     animation: none !important;
     transition: none !important;
     transform: none !important;
+  }
+
+  .announcement-banner {
+    background-position: 0% 50% !important;
   }
 }
 
