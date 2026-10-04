@@ -37,8 +37,8 @@
       <nav class="hidden md:flex items-center space-x-8">
         <!-- <button onclick="showPage('home')" class="nav-link font-medium hover:text-primary">Home</button> -->
         <button onclick="showPage('about')" class="nav-link font-medium hover:text-primary">About Us</button>
-        <!-- <button onclick="showPage('testimonials')" class="nav-link font-medium hover:text-primary">Testimonials</button> -->
         <button onclick="showPage('gallery')" class="nav-link font-medium hover:text-primary">Gallery</button>
+        <button onclick="showPage('testimonials')" class="nav-link font-medium hover:text-primary">Testimonials</button>
         <button onclick="showPage('contact')" class="nav-link font-medium hover:text-primary">Contact Us</button>
         <a href="https://bhau.org/" target="_blank" rel="noopener noreferrer"
           class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full pl-1.5 pr-3 py-1 hover:bg-white/20 transition">
@@ -58,8 +58,8 @@
       <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
         <!-- <button onclick="showPage('home')" class="nav-link font-medium py-2">Home</button> -->
         <button onclick="showPage('about')" class="nav-link font-medium py-2">About Us</button>
-        <!-- <button onclick="showPage('testimonials')" class="nav-link font-medium py-2">Testimonials</button> -->
         <button onclick="showPage('gallery')" class="nav-link font-medium py-2">Gallery</button>
+        <button onclick="showPage('testimonials')" class="nav-link font-medium py-2">Testimonials</button>
         <button onclick="showPage('contact')" class="nav-link font-medium py-2">Contact Us</button>
         <a href="https://bhau.org/" target="_blank" rel="noopener noreferrer" class="nav-link font-medium py-2 flex items-center gap-2">
           <img src="./images/bhau-institute-logo.jpg" alt="" width="480" height="420"
@@ -470,73 +470,45 @@
     </section>
 
     <!-- Testimonials Page -->
-    <!-- <section id="testimonials" class="page">
+    <section id="testimonials" class="page">
       <div class="container mx-auto px-4 py-16">
 
         <div class="text-center mb-16">
-          <h1 class="text-4xl font-bold mb-4">Community Voices</h1>
+          <img src="./images/founding-member-badge.jpg" alt="SocioTurtle Founding Member badge" width="300"
+            height="300" class="w-20 h-20 mx-auto mb-4 rounded-full shadow-md" loading="lazy" decoding="async">
+          <h1 class="text-4xl font-bold mb-4">Founding Member Testimonials</h1>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Hear what people in the SocioTurtle community are saying about their experience.
+            Real words from the students shaping SocioTurtle's earliest community.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow duration-300">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-3xl mx-auto">
 
-            <div class="flex items-center mb-6">
-
-              <img src="images/client1.jpg" class="w-16 h-16 rounded-full object-cover mr-4" alt="Sarah Johnson">
-
-              <div>
-                <h3 class="font-semibold text-lg">Sarah Johnson</h3>
-                <p class="text-gray-600 text-sm">Community Member</p>
-              </div>
-
-            </div>
-
-            <p class="text-gray-600 italic">
-              “SocioTurtle creates the kind of conversations the internet used to have — thoughtful, curious, and
-              genuinely insightful.”
+          <div class="relative bg-dark text-white rounded-2xl shadow-lg pt-16 pb-8 px-8 text-center overflow-hidden">
+            <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary to-secondary" aria-hidden="true"></div>
+            <img src="./images/testimonials/sanika.jpg" alt="Portrait of Founding Member 1" width="560" height="560"
+              class="absolute -top-10 left-1/2 -translate-x-1/2 w-24 h-24 rounded-full object-cover border-4 border-dark shadow-lg"
+              loading="lazy" decoding="async">
+            <i class="fas fa-quote-left text-primary text-2xl mb-4 block" aria-hidden="true"></i>
+            <p class="text-gray-200 leading-relaxed mb-6">
+              My experience with SocioTurtle has been wonderful so far. I've learned many new things, improved my
+              confidence, and received valuable career guidance. It has been a great learning experience, and I'm
+              really happy to be a part of this journey.
             </p>
-
+            <p class="font-semibold text-primary text-sm uppercase tracking-wide">Founding Member 1</p>
           </div>
-          <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow duration-300">
 
-            <div class="flex items-center mb-6">
-
-              <img src="images/client2.jpg" class="w-16 h-16 rounded-full object-cover mr-4" alt="Michael Chen">
-
-              <div>
-                <h3 class="font-semibold text-lg">Michael Chen</h3>
-                <p class="text-gray-600 text-sm">Entrepreneur</p>
-              </div>
-
-            </div>
-
-            <p class="text-gray-600 italic">
-              “It's refreshing to see a platform focused on curiosity and meaningful learning rather than just quick
-              reactions.”
+          <div class="relative bg-dark text-white rounded-2xl shadow-lg pt-16 pb-8 px-8 text-center overflow-hidden">
+            <div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary to-secondary" aria-hidden="true"></div>
+            <img src="./images/testimonials/aditi.jpg" alt="Portrait of Founding Member 2" width="560" height="560"
+              class="absolute -top-10 left-1/2 -translate-x-1/2 w-24 h-24 rounded-full object-cover border-4 border-dark shadow-lg"
+              loading="lazy" decoding="async">
+            <i class="fas fa-quote-left text-primary text-2xl mb-4 block" aria-hidden="true"></i>
+            <p class="text-gray-200 leading-relaxed mb-6">
+              My experience with SocioTurtle has been really good so far. I'm learning new things, gaining
+              confidence, and getting valuable career guidance. I'm happy to be part of this journey.
             </p>
-
-          </div>
-          <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-lg transition-shadow duration-300">
-
-            <div class="flex items-center mb-6">
-
-              <img src="images/client3.jpg" class="w-16 h-16 rounded-full object-cover mr-4" alt="Emily Rodriguez">
-
-              <div>
-                <h3 class="font-semibold text-lg">Emily Rodriguez</h3>
-                <p class="text-gray-600 text-sm">Educator</p>
-              </div>
-
-            </div>
-
-            <p class="text-gray-600 italic">
-              “SocioTurtle reminds me that learning doesn't only happen in classrooms — it happens through
-              conversations.”
-            </p>
-
+            <p class="font-semibold text-primary text-sm uppercase tracking-wide">Founding Member 2</p>
           </div>
 
         </div>
@@ -544,23 +516,23 @@
         <div class="mt-16 bg-gradient-to-r from-primary to-secondary rounded-xl p-8 text-white text-center">
 
           <h2 class="text-2xl font-bold mb-4">
-            Join a Community Built on Curiosity
+            Want to Share Your Story?
           </h2>
 
           <p class="mb-6 max-w-2xl mx-auto">
-            Be part of thoughtful conversations where questions are welcomed, ideas are explored, and learning happens
-            naturally.
+            If SocioTurtle has been part of your journey, we'd love to hear about it — and maybe feature it right
+            here.
           </p>
 
           <button onclick="showPage('contact')"
             class="bg-white text-primary font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300">
-            Join the Community
+            Get in Touch
           </button>
 
         </div>
 
       </div>
-    </section> -->
+    </section>
 
     <!-- Gallery Page -->
     <section id="gallery" class="page">
