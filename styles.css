@@ -452,14 +452,14 @@
       font-weight: 700;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: #0f766e;
+      color: #0e7490;
   }
 
   .about-founder-note p {
       margin: 0;
       font-size: 0.98rem;
       line-height: 1.75;
-      color: #155e75;
+      color: #0e7490;
   }
 
   .about-founder-copy,
@@ -482,7 +482,7 @@
       font-weight: 700;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: #0f766e;
+      color: #0e7490;
   }
 
   .about-story-title {
@@ -492,7 +492,9 @@
       font-weight: 700;
       line-height: 1.32;
       letter-spacing: -0.01em;
-      color: #0f766e;
+      background: linear-gradient(90deg, #22D3EE, #C084FC);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
   }
 
   .about-story-text {
@@ -521,7 +523,7 @@
       border-radius: 999px;
       font-size: 0.8rem;
       font-weight: 600;
-      color: #0f766e;
+      color: #0e7490;
       background: linear-gradient(135deg, rgba(236, 254, 255, 0.92), rgba(245, 243, 255, 0.92));
       border: 1px solid rgba(192, 132, 252, 0.2);
       box-shadow: none;
@@ -560,16 +562,16 @@
       border-radius: 999px;
       font-size: 0.78rem;
       font-weight: 800;
-      color: #0f766e;
-      background: linear-gradient(135deg, rgba(204, 251, 241, 0.95), rgba(224, 242, 254, 0.95));
-      box-shadow: inset 0 0 0 1px rgba(45, 212, 191, 0.24);
+      color: #0e7490;
+      background: linear-gradient(135deg, rgba(34, 211, 238, 0.16), rgba(192, 132, 252, 0.16));
+      box-shadow: inset 0 0 0 1px rgba(34, 211, 238, 0.28);
   }
 
   .about-founder-journey-item h3 {
       margin: 0 0 6px;
       font-size: 1rem;
       font-weight: 700;
-      color: #0891b2;
+      color: #0e7490;
   }
 
   .about-founder-journey-item p {
@@ -593,7 +595,9 @@
       font-size: clamp(1.6rem, 3vw, 2.2rem);
       font-weight: 650;
       line-height: 1.2;
-      color: #0891b2;
+      background: linear-gradient(90deg, #22D3EE, #C084FC);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
   }
 
   .about-quote-support {
@@ -610,7 +614,7 @@
       margin-top: 18px;
       font-size: 0.95rem;
       font-weight: 600;
-      color: #0891b2;
+      color: #0e7490;
       text-decoration: none;
       border-bottom: 1px solid rgba(34, 211, 238, 0.4);
   }
@@ -670,7 +674,7 @@
   }
 
   .about-ops-card h3 {
-      color: #0891b2;
+      color: #0e7490;
   }
 
   @keyframes founderFloat {
