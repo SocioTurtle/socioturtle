@@ -377,8 +377,6 @@
       display: grid;
       grid-template-columns: 1fr;
       gap: 24px;
-      max-width: 920px;
-      margin: 0 auto;
   }
 
   .about-founder-card,
@@ -479,7 +477,6 @@
   }
 
   .about-story-title {
-      max-width: 24ch;
       margin-bottom: 16px;
       font-size: clamp(1.3rem, 2vw, 1.8rem);
       font-weight: 700;
@@ -491,7 +488,6 @@
   }
 
   .about-story-text {
-      max-width: 62ch;
       margin-bottom: 14px;
       font-size: 1rem;
       line-height: 1.9;
@@ -1017,7 +1013,6 @@ h1 {
     max-width: none;
   }
 
-  .about-story-title,
   .about-founder-quote {
     max-width: none;
   }
