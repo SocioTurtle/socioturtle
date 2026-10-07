@@ -377,6 +377,8 @@
       display: grid;
       grid-template-columns: 1fr;
       gap: 24px;
+      max-width: 920px;
+      margin: 0 auto;
   }
 
   .about-founder-card,
