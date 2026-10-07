@@ -375,9 +375,8 @@
 
   .about-story-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.28fr) minmax(300px, 0.82fr);
+      grid-template-columns: 1fr;
       gap: 24px;
-      align-items: stretch;
   }
 
   .about-founder-card,
@@ -392,11 +391,8 @@
       position: relative;
       display: grid;
       grid-template-columns: minmax(190px, 240px) 1fr;
-      grid-column: 1;
-      grid-row: 1 / span 2;
       gap: 22px;
       padding: 26px;
-      height: 100%;
       background: rgba(255, 255, 255, 0.94);
       border: 1px solid rgba(148, 163, 184, 0.14);
       box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
@@ -469,8 +465,6 @@
   .about-quote-card {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      height: 100%;
   }
 
   .about-story-eyebrow {
@@ -579,8 +573,6 @@
   }
 
   .about-quote-card {
-      grid-column: 2;
-      grid-row: 1 / span 2;
       background: rgba(248, 250, 252, 0.94);
       border: 1px solid rgba(148, 163, 184, 0.14);
       box-shadow: 0 18px 40px rgba(15, 23, 42, 0.05);
@@ -1014,24 +1006,13 @@ h1 {
 }
 @media (max-width: 768px) {
 
-  .about-story-grid {
-    grid-template-columns: 1fr;
-  }
-
   .about-founder-card {
     grid-template-columns: 1fr;
-    grid-column: auto;
-    grid-row: auto;
     padding: 24px;
   }
 
   .about-founder-frame {
     max-width: none;
-  }
-
-  .about-quote-card {
-    grid-column: auto;
-    grid-row: auto;
   }
 
   .about-story-title,
