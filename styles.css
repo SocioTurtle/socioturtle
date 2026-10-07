@@ -577,7 +577,6 @@
   }
 
   .about-founder-quote {
-      max-width: 22ch;
       margin: 0 0 16px;
       font-size: clamp(1.6rem, 3vw, 2.2rem);
       font-weight: 650;
@@ -588,7 +587,6 @@
   }
 
   .about-quote-support {
-      max-width: 58ch;
       margin: 0;
       font-size: 1rem;
       line-height: 1.85;
@@ -1010,10 +1008,6 @@ h1 {
   }
 
   .about-founder-frame {
-    max-width: none;
-  }
-
-  .about-founder-quote {
     max-width: none;
   }
 
