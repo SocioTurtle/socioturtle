@@ -1115,3 +1115,11 @@ h1 {
 .timeline.upcoming {
   border-color: #9ca3af;
 }
+
+.faq-item summary {
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}

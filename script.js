@@ -9,7 +9,8 @@ const roleData = {
       "Earn verified proof of skills and progress",
       "Discover peers, mentors, and career direction"
     ],
-    outcome: "Move from learning to employability with a profile that shows what you can actually do."
+    outcome: "Move from learning to employability with a profile that shows what you can actually do.",
+    cta: "Join free as a student"
   },
   educator: {
     eyebrow: "For Women Mentors & Educators",
@@ -20,7 +21,8 @@ const roleData = {
       "Verify student skills with context and credibility",
       "Showcase mentorship impact across a wider community"
     ],
-    outcome: "Become the bridge between learning, confidence, and career readiness."
+    outcome: "Become the bridge between learning, confidence, and career readiness.",
+    cta: "Join free as a mentor"
   },
   employer: {
     eyebrow: "For Employers",
@@ -31,7 +33,8 @@ const roleData = {
       "Reduce screening effort with stronger signal upfront",
       "Build an early pipeline through community engagement"
     ],
-    outcome: "Reach talent earlier and make hiring decisions with more confidence."
+    outcome: "Reach talent earlier and make hiring decisions with more confidence.",
+    cta: "Get early access to talent"
   }
 };
 
@@ -58,6 +61,15 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// In-page links to other home sections (e.g. #gallery) switch the visible section like the nav does.
+document.addEventListener("click", event => {
+  const link = event.target.closest("[data-page]");
+  if (!link) return;
+
+  event.preventDefault();
+  showPage(link.dataset.page);
+});
+
 // Join links point at #join so they still lead somewhere useful if this script fails to load.
 document.addEventListener("click", event => {
   const trigger = event.target.closest("[data-open-register]");
@@ -69,8 +81,6 @@ document.addEventListener("click", event => {
 });
 
 function showPage(pageId) {
-  console.log("Navigating to:", pageId);
-
   const pages = document.querySelectorAll(".page");
 
   pages.forEach(page => {
@@ -366,6 +376,7 @@ function switchRole(role, el = null) {
         `).join("")}
       </ul>
       <p class="role-outcome">${data.outcome}</p>
+      <a href="#join" data-open-register class="inline-block mt-6 bg-primary text-dark px-6 py-3 rounded-lg font-semibold hover:bg-secondary transition">${data.cta}</a>
     </div>
   `;
 
