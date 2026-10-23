@@ -29,7 +29,22 @@ code .
 
 **Preview the site locally:**
 1. Open `index.html` in the editor and use the Live Server extension (right-click → "Open with Live Server") or open the file directly in your browser.
-2. The site is static (HTML/CSS/JS). No build step is required.
+2. The site is static (HTML/CSS/JS). Pages load the prebuilt `tailwind.css`, so previewing needs no build step.
+
+**Regenerate `tailwind.css` after changing Tailwind classes:**
+
+`tailwind.css` contains only the Tailwind classes used in the HTML and JS files. After you add or change a Tailwind class, rebuild it, or the new class will have no effect on the live site.
+
+1. Download the Tailwind CSS v3.4.17 standalone CLI for your platform from https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.4.17 (for example `tailwindcss-macos-arm64` or `tailwindcss-windows-x64.exe`). Keep it outside the repository and rename it to `tailwindcss`.
+2. From the repository root, run:
+
+```bash
+./tailwindcss -i tailwind.input.css -o tailwind.css --minify
+```
+
+3. Commit the updated `tailwind.css` together with your HTML or JS change.
+
+Brand colors (`primary`, `secondary`, `dark`, `light`) are defined in `tailwind.config.js`.
 
 **Using an AI agent in VS Code (recommended workflow):**
 1. Install and enable your AI assistant extension (e.g., GitHub Copilot Chat).
@@ -78,8 +93,10 @@ git push -u origin feature/your-description
 
 ---
 Project files of interest:
-- [index.html](index.html)
-- [styles.css](styles.css)
-- [script.js](script.js)
-- [thankyou.html](thankyou.html)
+- [index.html](index.html) — home page and its sections (About, Gallery, Testimonials, Investors, Contact)
+- [archives.html](archives.html) — Our Journey: past events and milestones
+- [styles.css](styles.css) — custom styles
+- [tailwind.css](tailwind.css) — generated Tailwind utilities (do not edit by hand)
+- [script.js](script.js) — home page behaviour and the sign-up dialog
+- [nav.js](nav.js) — mobile menu, shared by every page
 
