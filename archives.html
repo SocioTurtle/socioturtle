@@ -56,17 +56,38 @@
         <span class="text-xl font-semibold text-light">SocioTurtle</span>
       </a>
 
-      <nav class="hidden md:flex items-center space-x-8">
+      <nav class="hidden lg:flex items-center gap-6 whitespace-nowrap" aria-label="Main">
         <a href="index.html" class="nav-link font-medium hover:text-primary">Home</a>
         <a href="index.html#about" class="nav-link font-medium hover:text-primary">About Us</a>
         <a href="archives.html" class="nav-link font-medium hover:text-primary" aria-current="page">Our Journey</a>
+        <a href="index.html#gallery" class="nav-link font-medium hover:text-primary">Gallery</a>
+        <a href="index.html#testimonials" class="nav-link font-medium hover:text-primary">Testimonials</a>
+        <a href="index.html#investors" class="nav-link font-medium hover:text-primary">Investors</a>
         <a href="index.html#contact" class="nav-link font-medium hover:text-primary">Contact Us</a>
         <a href="https://bhau.org/" target="_blank" rel="noopener noreferrer"
-          class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full pl-1.5 pr-3 py-1 hover:bg-white/20 transition">
+          class="hidden xl:inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full pl-1.5 pr-3 py-1 hover:bg-white/20 transition">
           <img src="./images/bhau-institute-logo.jpg" alt="" width="480" height="420"
             class="h-6 w-6 rounded-full object-contain bg-white" loading="lazy" decoding="async">
           <span class="text-xs text-white/90">Incubated at COEP BHAU Institute</span>
         </a>
+      </nav>
+
+      <button class="lg:hidden text-dark" id="menu-toggle" type="button" aria-label="Menu" aria-expanded="false"
+        aria-controls="mobile-menu">
+        <i class="fas fa-bars text-xl" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="site-mobile-menu hidden lg:hidden">
+      <nav class="container mx-auto px-4 py-3 flex flex-col space-y-3" aria-label="Main">
+        <a href="index.html" class="nav-link font-medium py-2">Home</a>
+        <a href="index.html#about" class="nav-link font-medium py-2">About Us</a>
+        <a href="archives.html" class="nav-link font-medium py-2" aria-current="page">Our Journey</a>
+        <a href="index.html#gallery" class="nav-link font-medium py-2">Gallery</a>
+        <a href="index.html#testimonials" class="nav-link font-medium py-2">Testimonials</a>
+        <a href="index.html#investors" class="nav-link font-medium py-2">Investors</a>
+        <a href="index.html#contact" class="nav-link font-medium py-2">Contact Us</a>
       </nav>
     </div>
   </header>
@@ -222,6 +243,7 @@
     </div>
 
   </div>
+  <script src="nav.js" defer></script>
 </body>
 
 </html>

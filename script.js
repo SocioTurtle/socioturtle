@@ -41,15 +41,12 @@ window.onload = () => {
   switchRole("student", firstBtn);
 };
 
+function closeMobileMenu() {
+  document.getElementById("mobile-menu").classList.add("hidden");
+  document.getElementById("menu-toggle").setAttribute("aria-expanded", "false");
+}
+
 document.addEventListener("DOMContentLoaded", function () {
-  const toggleBtn = document.getElementById("menu-toggle");
-
-  if (toggleBtn) {
-    toggleBtn.addEventListener("click", function () {
-      document.getElementById("mobile-menu").classList.toggle("hidden");
-    });
-  }
-
   const targetPage = window.location.hash.slice(1);
   if (targetPage && document.getElementById(targetPage)?.classList.contains("page")) {
     showPage(targetPage);
@@ -67,7 +64,7 @@ document.addEventListener("click", event => {
   if (!trigger) return;
 
   event.preventDefault();
-  document.getElementById("mobile-menu").classList.add("hidden");
+  closeMobileMenu();
   openRegisterModal();
 });
 
@@ -86,7 +83,7 @@ function showPage(pageId) {
     selectedPage.classList.add("active-page");
   }
 
-  document.getElementById("mobile-menu").classList.add("hidden");
+  closeMobileMenu();
 
   window.scrollTo(0, 0);
 }
