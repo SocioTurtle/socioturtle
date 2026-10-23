@@ -93,10 +93,12 @@ git push -u origin feature/your-description
 
 ---
 Project files of interest:
-- [index.html](index.html) — home page and its sections (About, Gallery, Testimonials, Investors, Contact)
+- [index.html](index.html) — home page and the sign-up dialog
+- [about.html](about.html), [gallery.html](gallery.html), [testimonials.html](testimonials.html), [investors.html](investors.html), [contact.html](contact.html) — one page per menu item
 - [archives.html](archives.html) — Our Journey: past events and milestones
 - [styles.css](styles.css) — custom styles
 - [tailwind.css](tailwind.css) — generated Tailwind utilities (do not edit by hand)
-- [script.js](script.js) — home page behaviour and the sign-up dialog
+- [script.js](script.js) — home page behaviour, the sign-up dialog, and redirects from old `index.html#section` links
 - [nav.js](nav.js) — mobile menu, shared by every page
+- [sitemap.xml](sitemap.xml) and [robots.txt](robots.txt) — add new pages to the sitemap
 

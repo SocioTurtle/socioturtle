@@ -54,25 +54,21 @@ function closeMobileMenu() {
   document.getElementById("menu-toggle").setAttribute("aria-expanded", "false");
 }
 
+// These sections used to live on the home page as index.html#about etc.; keep shared and bookmarked links working.
+const MOVED_SECTIONS = ["about", "gallery", "testimonials", "investors", "contact"];
+
 document.addEventListener("DOMContentLoaded", function () {
-  const targetPage = window.location.hash.slice(1);
-  if (targetPage && document.getElementById(targetPage)?.classList.contains("page")) {
-    showPage(targetPage);
+  const hashTarget = window.location.hash.slice(1);
+
+  if (MOVED_SECTIONS.includes(hashTarget)) {
+    window.location.replace(`${hashTarget}.html`);
+    return;
   }
 
   // Other pages link to index.html#join, so arriving with that hash opens the sign-up dialog.
-  if (targetPage === "join") {
+  if (hashTarget === "join") {
     openRegisterModal();
   }
-});
-
-// In-page links to other home sections (e.g. #gallery) switch the visible section like the nav does.
-document.addEventListener("click", event => {
-  const link = event.target.closest("[data-page]");
-  if (!link) return;
-
-  event.preventDefault();
-  showPage(link.dataset.page);
 });
 
 // Join links point at #join so they still lead somewhere useful if this script fails to load.
@@ -84,32 +80,6 @@ document.addEventListener("click", event => {
   closeMobileMenu();
   openRegisterModal();
 });
-
-function showPage(pageId) {
-  const pages = document.querySelectorAll(".page");
-
-  pages.forEach(page => {
-    page.classList.remove("active-page");
-  });
-
-  const selectedPage = document.getElementById(pageId);
-
-  if (selectedPage) {
-    selectedPage.classList.add("active-page");
-  }
-
-  document.querySelectorAll("header [data-page]").forEach(link => {
-    if (link.dataset.page === pageId) {
-      link.setAttribute("aria-current", "page");
-    } else {
-      link.removeAttribute("aria-current");
-    }
-  });
-
-  closeMobileMenu();
-
-  window.scrollTo(0, 0);
-}
 
 // Registration modal logic
 const REGISTER_API_BASE = 'https://api.socioturtle.com';

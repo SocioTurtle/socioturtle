@@ -74,13 +74,13 @@
       </a>
 
       <nav class="hidden lg:flex items-center gap-6 whitespace-nowrap" aria-label="Main">
-        <a href="#home" data-page="home" class="nav-link font-medium hover:text-primary" aria-current="page">Home</a>
-        <a href="#about" data-page="about" class="nav-link font-medium hover:text-primary">About Us</a>
+        <a href="index.html" class="nav-link font-medium hover:text-primary" aria-current="page">Home</a>
+        <a href="about.html" class="nav-link font-medium hover:text-primary">About Us</a>
         <a href="archives.html" class="nav-link font-medium hover:text-primary">Our Journey</a>
-        <a href="#gallery" data-page="gallery" class="nav-link font-medium hover:text-primary">Gallery</a>
-        <a href="#testimonials" data-page="testimonials" class="nav-link font-medium hover:text-primary">Testimonials</a>
-        <a href="#investors" data-page="investors" class="nav-link font-medium hover:text-primary">Investors</a>
-        <a href="#contact" data-page="contact" class="nav-link font-medium hover:text-primary">Contact Us</a>
+        <a href="gallery.html" class="nav-link font-medium hover:text-primary">Gallery</a>
+        <a href="testimonials.html" class="nav-link font-medium hover:text-primary">Testimonials</a>
+        <a href="investors.html" class="nav-link font-medium hover:text-primary">Investors</a>
+        <a href="contact.html" class="nav-link font-medium hover:text-primary">Contact Us</a>
         <a href="https://bhau.org/" target="_blank" rel="noopener noreferrer"
           class="hidden xl:inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full pl-1.5 pr-3 py-1 hover:bg-white/20 transition">
           <img src="./images/bhau-institute-logo.webp" alt="" width="96" height="84"
@@ -98,13 +98,13 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="site-mobile-menu hidden lg:hidden">
       <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
-        <a href="#home" data-page="home" class="nav-link font-medium py-2" aria-current="page">Home</a>
-        <a href="#about" data-page="about" class="nav-link font-medium py-2">About Us</a>
+        <a href="index.html" class="nav-link font-medium py-2" aria-current="page">Home</a>
+        <a href="about.html" class="nav-link font-medium py-2">About Us</a>
         <a href="archives.html" class="nav-link font-medium py-2">Our Journey</a>
-        <a href="#gallery" data-page="gallery" class="nav-link font-medium py-2">Gallery</a>
-        <a href="#testimonials" data-page="testimonials" class="nav-link font-medium py-2">Testimonials</a>
-        <a href="#investors" data-page="investors" class="nav-link font-medium py-2">Investors</a>
-        <a href="#contact" data-page="contact" class="nav-link font-medium py-2">Contact Us</a>
+        <a href="gallery.html" class="nav-link font-medium py-2">Gallery</a>
+        <a href="testimonials.html" class="nav-link font-medium py-2">Testimonials</a>
+        <a href="investors.html" class="nav-link font-medium py-2">Investors</a>
+        <a href="contact.html" class="nav-link font-medium py-2">Contact Us</a>
         <a href="https://bhau.org/" target="_blank" rel="noopener noreferrer" class="nav-link font-medium py-2 flex items-center gap-2">
           <img src="./images/bhau-institute-logo.webp" alt="" width="96" height="84"
             class="h-5 w-5 rounded-full object-contain bg-white" loading="lazy" decoding="async">
@@ -115,9 +115,9 @@
   </header>
 
   <!-- Main Content Area -->
-  <main id="main" class="pt-20 pb-28 flex-1">
+  <main id="main" class="pt-20 flex-1">
     <!-- Home Page -->
-    <section id="home" class="page active-page">
+    <div id="home">
 
       <!-- Announcement Banner -->
       <div
@@ -358,7 +358,7 @@
           </div>
 
           <p class="text-center mt-10">
-            <a href="#testimonials" data-page="testimonials" class="text-cyan-700 font-semibold hover:text-secondary">
+            <a href="testimonials.html" class="text-cyan-700 font-semibold hover:text-secondary">
               Read all founding member stories <i class="fas fa-arrow-right ml-1" aria-hidden="true"></i>
             </a>
           </p>
@@ -393,7 +393,7 @@
           </div>
 
           <p class="text-center mt-10">
-            <a href="#gallery" data-page="gallery" class="text-cyan-700 font-semibold hover:text-secondary">
+            <a href="gallery.html" class="text-cyan-700 font-semibold hover:text-secondary">
               See the full gallery <i class="fas fa-arrow-right ml-1" aria-hidden="true"></i>
             </a>
           </p>
@@ -477,7 +477,7 @@
                 Who is behind SocioTurtle?
                 <i class="fas fa-chevron-down text-gray-500 transition-transform group-open:rotate-180" aria-hidden="true"></i>
               </summary>
-              <p class="px-6 pb-6 text-gray-600 leading-7">SocioTurtle was founded by Poonam Pal after 19+ years in enterprise transformation, and is incubated at COEP BHAU Institute, Pune. <a href="#about" data-page="about" class="text-cyan-700 underline hover:text-secondary">Read our story</a>.</p>
+              <p class="px-6 pb-6 text-gray-600 leading-7">SocioTurtle was founded by Poonam Pal after 19+ years in enterprise transformation, and is incubated at COEP BHAU Institute, Pune. <a href="about.html" class="text-cyan-700 underline hover:text-secondary">Read our story</a>.</p>
             </details>
           </div>
         </section>
@@ -497,706 +497,10 @@
         </section>
       </div>
 
-    </section>
-    <!-- About Us Page -->
-    <section id="about" class="page">
-      <div class="container mx-auto px-4 py-16">
-        <div class="text-center mb-16">
-          <h1 class="text-4xl font-bold mb-4">About Us</h1>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            SocioTurtle is building a more outcome-driven bridge between learning and opportunity for women
-            students — connecting them with educators and employers through visible skills, stronger validation,
-            and meaningful community.
-          </p>
-        </div>
-        <!-- Leadership Story -->
-        <div class="about-story mb-16">
-          <div class="about-story-grid">
-            <div class="about-founder-card">
-              <div class="about-founder-media">
-                <div class="about-founder-frame">
-                  <img src="./images/founder_pic.webp" alt="Poonam Pal, Founder of SocioTurtle" width="840" height="994"
-                    class="about-founder-image" loading="lazy" decoding="async">
-                </div>
-                <div class="about-founder-note">
-                  <span class="about-founder-note-label">Poonam Pal, Founder</span>
-                  <p>Built on 19+ years of transformation leadership across industries and systems.</p>
-                </div>
-              </div>
-              <div class="about-founder-copy">
-                <p class="about-story-eyebrow">Our Beginning</p>
-                <h2 class="about-story-title">SocioTurtle began with a simple conviction: talent deserves access to opportunity.</h2>
-                <p class="about-story-text">
-                  After 19+ years leading enterprise transformation across telecom, banking, automobile, oil and gas,
-                  chemicals, manufacturing, and media, Poonam Pal saw the same pattern again and again: capability
-                  existed, but access to opportunity did not.
-                </p>
-                <p class="about-story-text">
-                  SocioTurtle was born from that insight: make learning more visible, validation more credible, and
-                  opportunity more accessible for every learner ready to move forward.
-                </p>
-                <div class="about-founder-credentials">
-                  <span class="about-founder-pill">MBA, IIM Kozhikode</span>
-                  <span class="about-founder-pill">SAP S/4HANA Expert</span>
-                  <span class="about-founder-pill">Enterprise Transformation Leader</span>
-                </div>
-                <div class="about-founder-journey">
-                  <div class="about-founder-journey-item">
-                    <span class="about-founder-journey-step">01</span>
-                    <div>
-                      <h3>Observed the gap</h3>
-                      <p>Strong capability existed, but real visibility and access did not.</p>
-                    </div>
-                  </div>
-                  <div class="about-founder-journey-item">
-                    <span class="about-founder-journey-step">02</span>
-                    <div>
-                      <h3>Built a response</h3>
-                      <p>SocioTurtle connects learning, proof, and opportunity into one continuous path.</p>
-                    </div>
-                  </div>
-                  <div class="about-founder-journey-item">
-                    <span class="about-founder-journey-step">03</span>
-                    <div>
-                      <h3>Gained institutional backing</h3>
-                      <p>Incubated at COEP BHAU Institute since June 2026, strengthening our path from idea to scale.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="about-quote-card">
-              <p class="about-story-eyebrow">What Guides Us</p>
-              <blockquote class="about-founder-quote">
-                “Talent is everywhere, but opportunity is not equally distributed.”
-              </blockquote>
-              <p class="about-quote-support">
-                SocioTurtle exists to close that gap for women students by connecting them with educators and
-                employers in one continuous story of learning, validation, and opportunity.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Core Values -->
-        <div class="bg-white rounded-xl shadow-md p-8 mb-16">
-          <h2 class="text-3xl font-bold mb-8 text-center">Our Core Values</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="text-center p-6">
-              <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i class="fas fa-solid fa-circle-question text-primary text-2xl"></i>
-              </div>
-              <h3 class="text-xl font-semibold mb-2">Curiosity</h3>
-              <p class="text-gray-600">We believe great learning starts with great questions.</p>
-            </div>
-            <div class="text-center p-6">
-              <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i class="fas fa-handshake text-primary text-2xl"></i>
-              </div>
-              <h3 class="text-xl font-semibold mb-2">Collaboration</h3>
-              <p class="text-gray-600">Knowledge becomes powerful when it is shared.</p>
-            </div>
-            <div class="text-center p-6">
-              <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i class="fas fa-solid fa-people-group text-primary text-2xl"></i>
-              </div>
-              <h3 class="text-xl font-semibold mb-2">Community</h3>
-              <p class="text-gray-600">Grow through meaningful conversations.</p>
-            </div>
-            <div class="text-center p-6">
-              <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i class="fas fa-solid fa-brain text-primary text-2xl"></i>
-              </div>
-              <h3 class="text-xl font-semibold mb-2">Wisdom</h3>
-              <p class="text-gray-600">Growing through shared knowledge</p>
-            </div>
-          </div>
-        </div>
-        <!-- Socioturtle Stories -->
-        <div class="bg-white rounded-xl shadow-md p-8 mb-16">
-
-          <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold mb-4">SocioTurtle Stories</h2>
-            <p class="text-gray-600 max-w-2xl mx-auto">
-              Short comic-style stories where Socioturtle encourages curiosity,
-              learning, and wisdom through everyday experiences.
-            </p>
-          </div>
-
-          <div class="max-w-2xl mx-auto">
-
-            <figure class="bg-white rounded-xl shadow-md overflow-hidden">
-              <img src="./images/story-mentor.webp"
-                alt="Comic strip 'The Mentor Who Was Once Lost': a junior turtle feels overwhelmed by choices like career, skills, internships, and higher studies. A senior turtle offers to explore it together, admitting she was once just as lost, and they walk forward together. Lesson: today's guide was once finding their way too."
-                width="1200" height="800" class="w-full" loading="lazy" decoding="async">
-            </figure>
-
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Investors Page -->
-    <section id="investors" class="page">
-      <div class="container mx-auto px-4 py-16">
-        <div class="text-center mb-16">
-          <h1 class="text-4xl font-bold mb-4">Investors &amp; Partners</h1>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Building India's next generation of career-ready women &mdash; a technology-enabled, personalized career
-            intelligence platform.
-          </p>
-        </div>
-
-        <!-- Investors & Partners -->
-        <div class="bg-white rounded-xl shadow-md p-8 mb-16">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <img src="./images/imc/flyer-investors.webp"
-              alt="SocioTurtle investor flyer: Building India's Next Generation of Career-Ready Women, vision, mission, approach, early traction, and partnership opportunities"
-              width="800" height="1066" class="w-full max-w-sm mx-auto rounded-xl shadow-md" loading="lazy"
-              decoding="async">
-            <div>
-              <h3 class="font-semibold text-lg mb-3">Early Traction</h3>
-              <div class="grid grid-cols-2 gap-3 mb-4">
-                <div class="bg-gray-50 border border-gray-100 rounded-lg p-4 text-center">
-                  <p class="text-2xl font-bold text-primary">8</p>
-                  <p class="text-xs text-gray-600">Founding members, week 1</p>
-                </div>
-                <div class="bg-gray-50 border border-gray-100 rounded-lg p-4 text-center">
-                  <p class="text-2xl font-bold text-primary">&#8377;3,192</p>
-                  <p class="text-xs text-gray-600">Revenue, zero CAC</p>
-                </div>
-              </div>
-              <ul class="space-y-2 mb-6 text-sm text-gray-700">
-                <li class="flex items-start gap-2"><i class="fas fa-circle-check text-primary mt-1"></i> 8 founding members enrolled organically in the first week &mdash; no paid marketing, ad spend, or fixed cost</li>
-                <li class="flex items-start gap-2"><i class="fas fa-circle-check text-primary mt-1"></i> Internship placement support initiated</li>
-                <li class="flex items-start gap-2"><i class="fas fa-circle-check text-primary mt-1"></i> College outreach and workshops conducted</li>
-                <li class="flex items-start gap-2"><i class="fas fa-circle-check text-primary mt-1"></i> Incubated at COEP BHAU Institute, Pune</li>
-              </ul>
-              <h3 class="font-semibold text-lg mb-2">Seeking Strategic Partners</h3>
-              <ul class="grid grid-cols-2 gap-x-4 gap-y-2 mb-6 text-sm text-gray-700">
-                <li class="flex items-start gap-2"><i class="fas fa-coins text-secondary mt-1"></i> Seed Funding</li>
-                <li class="flex items-start gap-2"><i class="fas fa-seedling text-secondary mt-1"></i> CSR Collaborations</li>
-                <li class="flex items-start gap-2"><i class="fas fa-building-columns text-secondary mt-1"></i> College Partnerships</li>
-                <li class="flex items-start gap-2"><i class="fas fa-people-group text-secondary mt-1"></i> Mentors &amp; Industry Experts</li>
-                <li class="flex items-start gap-2 col-span-2"><i class="fas fa-handshake text-secondary mt-1"></i> Internship &amp; Placement Partners</li>
-              </ul>
-              <div class="flex flex-wrap gap-3">
-                <a href="#contact" data-page="contact"
-                  class="inline-block bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-secondary transition">
-                  Partner With Us
-                </a>
-                <a href="#contact" data-page="contact"
-                  class="inline-block bg-white border border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition">
-                  Request Our Pitch Deck
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- SDG Alignment -->
-        <div class="bg-white rounded-xl shadow-md p-8">
-          <h2 class="text-3xl font-bold mb-2 text-center">UN Sustainable Development Goals</h2>
-          <p class="text-gray-600 text-center max-w-2xl mx-auto mb-8">
-            How SocioTurtle's mission aligns with the UN Sustainable Development Goals.
-          </p>
-          <div class="overflow-x-auto">
-            <table class="w-full text-left border-collapse">
-              <caption class="sr-only">SocioTurtle's alignment with five UN Sustainable Development Goals</caption>
-              <thead>
-                <tr class="border-b border-gray-200">
-                  <th scope="col" class="py-3 pr-4 font-semibold text-gray-700">SDG</th>
-                  <th scope="col" class="py-3 pr-4 font-semibold text-gray-700">Goal</th>
-                  <th scope="col" class="py-3 font-semibold text-gray-700">Alignment</th>
-                </tr>
-              </thead>
-              <tbody class="text-gray-700">
-                <tr class="border-b border-gray-100">
-                  <td class="py-3 pr-4 whitespace-nowrap">🎯 SDG 4</td>
-                  <td class="py-3 pr-4">Quality Education</td>
-                  <td class="py-3" aria-label="5 out of 5 stars">
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                  </td>
-                </tr>
-                <tr class="border-b border-gray-100">
-                  <td class="py-3 pr-4 whitespace-nowrap">👩 SDG 5</td>
-                  <td class="py-3 pr-4">Gender Equality</td>
-                  <td class="py-3" aria-label="5 out of 5 stars">
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                  </td>
-                </tr>
-                <tr class="border-b border-gray-100">
-                  <td class="py-3 pr-4 whitespace-nowrap">💼 SDG 8</td>
-                  <td class="py-3 pr-4">Decent Work &amp; Economic Growth</td>
-                  <td class="py-3" aria-label="5 out of 5 stars">
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                  </td>
-                </tr>
-                <tr class="border-b border-gray-100">
-                  <td class="py-3 pr-4 whitespace-nowrap">🚀 SDG 9</td>
-                  <td class="py-3 pr-4">Industry, Innovation &amp; Infrastructure</td>
-                  <td class="py-3" aria-label="4 out of 5 stars">
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                    <i class="far fa-star text-gray-300" aria-hidden="true"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="py-3 pr-4 whitespace-nowrap">🤝 SDG 17</td>
-                  <td class="py-3 pr-4">Partnerships for the Goals</td>
-                  <td class="py-3" aria-label="4 out of 5 stars">
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                    <i class="fas fa-star text-primary" aria-hidden="true"></i>
-                    <i class="far fa-star text-gray-300" aria-hidden="true"></i>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials Page -->
-    <section id="testimonials" class="page">
-      <div class="container mx-auto px-4 py-16">
-
-        <div class="text-center mb-16">
-          <img src="./images/founding-member-badge.webp" alt="SocioTurtle Founding Member badge" width="160"
-            height="160" class="w-20 h-20 mx-auto mb-4 rounded-full shadow-md" loading="lazy" decoding="async">
-          <h1 class="text-4xl font-bold mb-4">Founding Members Testimonials</h1>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Real words from the students shaping SocioTurtle's earliest community.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-3xl mx-auto">
-
-          <div class="relative bg-dark text-white rounded-2xl shadow-lg pt-16 pb-8 px-8 text-center">
-            <div class="absolute top-0 left-0 right-0 h-1.5 rounded-t-2xl bg-gradient-to-r from-primary to-secondary" aria-hidden="true"></div>
-            <img src="./images/testimonials/sanika.webp" alt="Portrait of Sanika" width="192" height="192"
-              class="absolute -top-10 left-1/2 -translate-x-1/2 w-24 h-24 rounded-full object-cover border-4 border-dark shadow-lg"
-              loading="lazy" decoding="async">
-            <i class="fas fa-quote-left text-primary text-2xl mb-4 block" aria-hidden="true"></i>
-            <p class="text-gray-200 leading-relaxed mb-6">
-              My experience with SocioTurtle has been wonderful so far. I've learned many new things, improved my
-              confidence, and received valuable career guidance. It has been a great learning experience, and I'm
-              really happy to be a part of this journey.
-            </p>
-            <p class="font-semibold text-primary text-sm uppercase tracking-wide">Sanika</p>
-          </div>
-
-          <div class="relative bg-dark text-white rounded-2xl shadow-lg pt-16 pb-8 px-8 text-center">
-            <div class="absolute top-0 left-0 right-0 h-1.5 rounded-t-2xl bg-gradient-to-r from-primary to-secondary" aria-hidden="true"></div>
-            <img src="./images/testimonials/aditi.webp" alt="Portrait of Aditi" width="192" height="192"
-              class="absolute -top-10 left-1/2 -translate-x-1/2 w-24 h-24 rounded-full object-cover border-4 border-dark shadow-lg"
-              loading="lazy" decoding="async">
-            <i class="fas fa-quote-left text-primary text-2xl mb-4 block" aria-hidden="true"></i>
-            <p class="text-gray-200 leading-relaxed mb-6">
-              My experience with SocioTurtle has been really good so far. I'm learning new things, gaining
-              confidence, and getting valuable career guidance. I'm happy to be part of this journey.
-            </p>
-            <p class="font-semibold text-primary text-sm uppercase tracking-wide">Aditi</p>
-          </div>
-
-          <div class="relative bg-dark text-white rounded-2xl shadow-lg pt-16 pb-8 px-8 text-center">
-            <div class="absolute top-0 left-0 right-0 h-1.5 rounded-t-2xl bg-gradient-to-r from-primary to-secondary" aria-hidden="true"></div>
-            <img src="./images/testimonials/sneha.webp" alt="Portrait of Sneha" width="192" height="192"
-              class="absolute -top-10 left-1/2 -translate-x-1/2 w-24 h-24 rounded-full object-cover border-4 border-dark shadow-lg"
-              loading="lazy" decoding="async">
-            <i class="fas fa-quote-left text-primary text-2xl mb-4 block" aria-hidden="true"></i>
-            <p class="text-gray-200 leading-relaxed mb-6">
-              My journey with SocioTurtle has been a meaningful one so far. It has helped me step out of my comfort
-              zone, learn through new experiences, and become more confident in myself. The guidance and exposure I'm
-              receiving are helping me understand my career goals better. I'm looking forward to learning, growing,
-              and making the most of this opportunity.
-            </p>
-            <p class="font-semibold text-primary text-sm uppercase tracking-wide">Sneha</p>
-          </div>
-
-          <div class="relative bg-dark text-white rounded-2xl shadow-lg pt-16 pb-8 px-8 text-center">
-            <div class="absolute top-0 left-0 right-0 h-1.5 rounded-t-2xl bg-gradient-to-r from-primary to-secondary" aria-hidden="true"></div>
-            <img src="./images/testimonials/jyoti.webp" alt="Portrait of Jyoti" width="192" height="192"
-              class="absolute -top-10 left-1/2 -translate-x-1/2 w-24 h-24 rounded-full object-cover border-4 border-dark shadow-lg"
-              loading="lazy" decoding="async">
-            <i class="fas fa-quote-left text-primary text-2xl mb-4 block" aria-hidden="true"></i>
-            <p class="text-gray-200 leading-relaxed mb-6">
-              New to SocioTurtle and loving the experience so far. It's simple, supportive and full of learning.
-              Excited for what's next!
-            </p>
-            <p class="font-semibold text-primary text-sm uppercase tracking-wide">Jyoti</p>
-          </div>
-
-        </div>
-
-        <div class="mt-16 bg-white rounded-xl shadow-md p-8">
-          <h2 class="text-3xl font-bold mb-2 text-center">Join the Founding Community</h2>
-          <p class="text-gray-600 text-center max-w-2xl mx-auto mb-8">
-            Get personalized guidance to build a confident and successful career. Joining is free.
-          </p>
-          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto mb-8 text-sm text-gray-700">
-            <li class="flex items-start gap-2"><i class="fas fa-bullseye text-primary mt-1" aria-hidden="true"></i> Personalized Career Assessment &mdash; discover your strengths and career pathway</li>
-            <li class="flex items-start gap-2"><i class="fas fa-user-group text-primary mt-1" aria-hidden="true"></i> Soft Skills Development &mdash; communicate, collaborate, and lead with confidence</li>
-            <li class="flex items-start gap-2"><i class="fas fa-chalkboard-user text-primary mt-1" aria-hidden="true"></i> Mentorship &mdash; learn from industry experts</li>
-            <li class="flex items-start gap-2"><i class="fas fa-briefcase text-primary mt-1" aria-hidden="true"></i> Internships &amp; Opportunities &mdash; curated internships, scholarships, and competitions</li>
-          </ul>
-          <div class="text-center">
-            <a href="#join" data-open-register
-              class="inline-block bg-primary text-dark px-6 py-3 rounded-lg font-semibold hover:bg-secondary transition">
-              Join SocioTurtle Free
-            </a>
-          </div>
-        </div>
-
-        <div class="mt-10 bg-gradient-to-r from-primary to-secondary rounded-xl p-8 text-white text-center">
-
-          <h2 class="text-2xl font-bold mb-4">
-            Want to Share Your Story?
-          </h2>
-
-          <p class="mb-6 max-w-2xl mx-auto">
-            If SocioTurtle has been part of your journey, we'd love to hear about it — and maybe feature it right
-            here.
-          </p>
-
-          <a href="#contact" data-page="contact"
-            class="inline-block bg-white text-primary font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300">
-            Get in Touch
-          </a>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Gallery Page -->
-    <section id="gallery" class="page">
-      <div class="container mx-auto px-4 py-16">
-        <div class="text-center mb-16">
-          <h1 class="text-4xl font-bold mb-4">Gallery</h1>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            A look at the work behind SocioTurtle — panel reviews, mentoring sessions, keynotes, and the people who
-            make the journey worth it.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src="./images/gallery/bvp-team.webp"
-              alt="Group photo with a team of students making peace signs in a classroom"
-              width="900" height="675" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
-            <div class="p-6">
-              <p class="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Team Moment</p>
-              <p class="text-gray-700 text-sm">The students who make every campus visit worth it.</p>
-            </div>
-          </div>
-
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src="./images/gallery/bvp6.webp"
-              alt="Speaking at a podium during a keynote session titled Two Hours, Seven Stops at Bharati Vidyapeeth's College of Engineering for Women, Pune"
-              width="900" height="675" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
-            <div class="p-6">
-              <p class="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Keynote Talk</p>
-              <p class="text-gray-700 text-sm">Two hours, seven stops — turning a CS degree into a real career map.</p>
-            </div>
-          </div>
-
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src="./images/gallery/bvp1.webp"
-              alt="Reviewing a student's project with fellow panelists at Bharati Vidyapeeth's College of Engineering for Women, Pune"
-              width="900" height="675" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
-            <div class="p-6">
-              <p class="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Panel Review</p>
-              <p class="text-gray-700 text-sm">Every review starts with one real question: does this solve a real
-                problem?</p>
-            </div>
-          </div>
-
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src="./images/gallery/bvp2.webp"
-              alt="Discussing a student project proposal during a panel review session"
-              width="900" height="675" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
-            <div class="p-6">
-              <p class="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Panel Review</p>
-              <p class="text-gray-700 text-sm">Sharper questions build sharper founders.</p>
-            </div>
-          </div>
-
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src="./images/gallery/bvp3.webp" alt="Panel of reviewers listening to a student present her project"
-              width="900" height="506" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
-            <div class="p-6">
-              <p class="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Panel Review</p>
-              <p class="text-gray-700 text-sm">Spotting real potential before the pitch is polished.</p>
-            </div>
-          </div>
-
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src="./images/gallery/bvp4.webp"
-              alt="One-on-one mentoring conversation with a student at the College of Engineering for Women, Pune"
-              width="900" height="675" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
-            <div class="p-6">
-              <p class="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Mentoring Session</p>
-              <p class="text-gray-700 text-sm">Mentorship starts with listening, not lecturing.</p>
-            </div>
-          </div>
-
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src="./images/gallery/bvp5.webp"
-              alt="Sitting down for a one-on-one discussion with a student in an office setting"
-              width="900" height="675" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
-            <div class="p-6">
-              <p class="text-xs font-semibold text-primary uppercase tracking-wide mb-2">One-on-One</p>
-              <p class="text-gray-700 text-sm">The real work happens in the one-on-one conversations.</p>
-            </div>
-          </div>
-
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src="./images/gallery/cbhau1.webp"
-              alt="Students showing a laptop screen near the S L Kirloskar Auditorium"
-              width="900" height="404" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
-            <div class="p-6">
-              <p class="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Campus Walkthrough</p>
-              <p class="text-gray-700 text-sm">Curiosity doesn't wait for the session to start.</p>
-            </div>
-          </div>
-
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src="./images/gallery/cbhau2.webp"
-              alt="Standing in front of a wall of startup logos at COEP BHAU Institute" width="900" height="404"
-              class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
-            <div class="p-6">
-              <p class="text-xs font-semibold text-primary uppercase tracking-wide mb-2">COEP BHAU Startup Wall</p>
-              <p class="text-gray-700 text-sm">Among the startups at COEP BHAU — exactly where we belong.</p>
-            </div>
-          </div>
-
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src="./images/gallery/bvp7.webp"
-              alt="Collage of moments from a campus visit, including a keynote talk, a panel discussion, and group photos with students"
-              width="900" height="569" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
-            <div class="p-6">
-              <p class="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Campus Day</p>
-              <p class="text-gray-700 text-sm">A day on campus: talks, panels, and students ready to build.</p>
-            </div>
-          </div>
-
-          <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src="./images/gallery/cbhau3.webp" alt="Selfie with family in an auditorium full of attendees"
-              width="494" height="1100" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
-            <div class="p-6">
-              <p class="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Celebrating Together</p>
-              <p class="text-gray-700 text-sm">The people who show up for every milestone.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Us Page -->
-    <section id="contact" class="page">
-      <div class="container mx-auto px-4 py-16">
-
-        <div class="text-center mb-16">
-          <h1 class="text-4xl font-bold mb-4">Contact Us</h1>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            We'd love to hear from you. Send feedback, ask questions, or connect with us.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
-
-          <!-- LEFT SIDE -->
-          <div class="flex flex-col gap-8 h-full">
-            <!-- Feedback Form -->
-            <div class="bg-white rounded-xl shadow-md p-8 flex-1">
-
-              <div class="mt-4 mb-4">
-                <div class="survey-callout">
-                  <h2 class="text-2xl font-bold mb-3">Take the Survey</h2>
-                  <p class="text-sm text-gray-700 mb-5">
-                    The survey is the fastest way to shape what SocioTurtle builds next. If you do one thing here, make
-                    it this.
-                  </p>
-                  <div class="survey-panel">
-
-                    <div>
-                      <p class="text-sm font-medium text-gray-800">
-                        Help us improve 🙌
-                      </p>
-                      <p class="text-xs text-gray-600">
-                        Takes less than 30 seconds
-                      </p>
-                    </div>
-
-                    <a href="https://forms.gle/ANZFyAmjvGzHyo3R7" target="_blank" rel="noopener noreferrer"
-                      class="survey-link ml-4 bg-primary text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-secondary transition whitespace-nowrap">
-                      Take Survey →
-                    </a>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Follow Us -->
-            <div class="bg-white rounded-xl shadow-md p-8 flex-1">
-              <h2 class="text-2xl font-bold mb-6">Follow Us</h2>
-
-              <p class="text-gray-600">
-                Stay updated with our latest news and community updates.
-              </p>
-
-              <div class="grid grid-cols-2 gap-6">
-                <!-- Instagram -->
-                <a href="https://www.instagram.com/socioturtle/"
-                  class="text-center p-4 bg-pink-50 rounded-lg hover:shadow">
-
-                  <div class="text-4xl text-pink-500 mb-2">
-                    <i class="fab fa-instagram"></i>
-                  </div>
-
-                  <h3 class="font-semibold mb-1">Instagram</h3>
-                  <p class="text-sm text-gray-600">@socioturtle</p>
-
-                </a>
-
-                <!-- X -->
-                <a href="https://x.com/socioturtle" class="text-center p-4 bg-blue-50 rounded-lg hover:shadow">
-
-                  <div class="text-4xl text-blue-500 mb-2">
-                    <i class="fab fa-x"></i>
-                  </div>
-
-                  <h3 class="font-semibold mb-1">X</h3>
-                  <p class="text-sm text-gray-600">@socioturtle</p>
-
-                </a>
-
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/socioturtle/"
-                  class="text-center p-4 bg-blue-50 rounded-lg hover:shadow">
-
-                  <div class="text-4xl text-blue-700 mb-2">
-                    <i class="fab fa-linkedin"></i>
-                  </div>
-
-                  <h3 class="font-semibold mb-1">LinkedIn</h3>
-                  <p class="text-sm text-gray-600">Socioturtle</p>
-
-                </a>
-
-                <!-- Email -->
-                <a href="mailto:contact@socioturtle.com" class="text-center p-4 bg-gray-50 rounded-lg hover:shadow" aria-label="Email SocioTurtle">
-
-                  <div class="text-4xl text-gray-700 mb-2">
-                    <i class="fas fa-envelope"></i>
-                  </div>
-
-                  <h3 class="font-semibold mb-1">Email Us</h3>
-                  <p class="text-sm text-gray-600">contact@socioturtle.com</p>
-
-                </a>
-
-              </div>
-
-            </div>
-
-          </div>
-
-          <!-- RIGHT SIDE -->
-          <div class="flex flex-col gap-8 h-full">
-            <!-- Our Information -->
-            <div class="bg-white rounded-xl shadow-md p-8 flex-1">
-              <h2 class="text-2xl font-bold mb-6">Our Information</h2>
-              <div class="space-y-8 bg-gray-50 border border-gray-100 rounded-lg p-8">
-                <!-- Founder -->
-                <div class="flex items-start">
-                  <i class="fas fa-user-circle text-primary mt-1 mr-4" aria-hidden="true"></i>
-                  <div>
-                    <h3 class="font-semibold">Poonam Pal</h3>
-                    <p class="text-gray-600 text-sm mb-1">Founder &amp; Director, Pune, India</p>
-                    <a href="mailto:poonam.pal@socioturtle.com" class="text-gray-600 hover:text-primary text-sm block mb-1">poonam.pal@socioturtle.com</a>
-                    <a href="https://www.linkedin.com/in/poonampalz" target="_blank" rel="noopener noreferrer"
-                      class="text-primary hover:text-secondary text-sm font-medium">
-                      <i class="fab fa-linkedin-in mr-1" aria-hidden="true"></i>Connect on LinkedIn
-                    </a>
-                  </div>
-                </div>
-                <!-- Head of Operations -->
-                <div class="flex items-start">
-                  <i class="fas fa-user-circle text-primary mt-1 mr-4" aria-hidden="true"></i>
-                  <div>
-                    <h3 class="font-semibold">Anurag Pal</h3>
-                    <p class="text-gray-600 text-sm mb-1">Head of Operations</p>
-                    <a href="mailto:admin@socioturtle.com" class="text-gray-600 hover:text-primary text-sm block mb-1">admin@socioturtle.com</a>
-                    <a href="https://www.linkedin.com/in/anurag-pal-593861b1/" target="_blank" rel="noopener noreferrer"
-                      class="text-primary hover:text-secondary text-sm font-medium">
-                      <i class="fab fa-linkedin-in mr-1" aria-hidden="true"></i>Connect on LinkedIn
-                    </a>
-                  </div>
-                </div>
-                <div class="flex items-start">
-                  <i class="fas fa-envelope text-primary mt-1 mr-4"></i>
-                  <div>
-                    <h3 class="font-semibold">Email</h3>
-                    <a href="mailto:contact@socioturtle.com" class="text-gray-600 hover:text-primary">contact@socioturtle.com</a>
-                  </div>
-                </div>
-                <!-- WhatsApp Group -->
-                <div class="flex items-start">
-                  <i class="fas fa-users text-purple-500 mt-1 mr-4"></i>
-                  <div>
-                    <h3 class="font-semibold text-sm">Join Community</h3>
-                    <a href="https://chat.whatsapp.com/KrPu6XxkGOnK53jI1gMogB?mode=gi_t" target="_blank" rel="noopener noreferrer"
-                      class="text-gray-600 hover:text-primary">
-                      Join WhatsApp Group 🚀
-                    </a>
-                  </div>
-                </div>
-                <!-- Registration & Recognition -->
-                <div class="flex items-start">
-                  <i class="fas fa-file-contract text-primary mt-1 mr-4"></i>
-                  <div>
-                    <h3 class="font-semibold text-sm mb-2">Registration &amp; Recognition</h3>
-                    <p class="text-gray-600 font-medium">
-                      SocioTurtle Technologies LLP<br>
-                      LLPIN: ACP-9452<br>
-                      Patent #202521103224 (Published)<br>
-                      DPIIT #238236<br>
-                      UDYAM-MH-26-1046979
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
+    </div>
   </main>
   <!-- Footer -->
-  <footer class="fixed bottom-0 left-0 right-0 bg-dark text-white py-4 shadow-lg z-40">
+  <footer class="bg-dark text-white py-4 shadow-lg">
     <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
       <!-- Logo + Tagline -->
       <div class="flex items-center space-x-2">
@@ -1236,7 +540,7 @@
   <script src="nav.js" defer></script>
   <script src="script.js" defer></script>
   <!-- Floating QR Button -->
-  <div class="fixed top-24 right-3 md:right-5 z-50">
+  <div class="fixed top-24 md:top-40 right-3 md:right-5 z-50">
 
     <!-- Membership Button -->
     <div class="relative mb-3 membership-cta">
