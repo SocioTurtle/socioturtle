@@ -14,13 +14,45 @@
   <meta property="og:description"
     content="A technology-enabled career intelligence platform empowering women students with personalized guidance, verified mentorship, and real opportunity.">
   <meta property="og:url" content="https://www.socioturtle.com/">
-  <meta property="og:image" content="https://www.socioturtle.com/images/logo_socioturtle.png">
+  <meta property="og:image" content="https://www.socioturtle.com/images/og-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="SocioTurtle: Personalized Career Growth for Women Students. Join the community free.">
 
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="SocioTurtle — Personalized Career Growth for Women Students">
   <meta name="twitter:description"
     content="A technology-enabled career intelligence platform empowering women students with personalized guidance, verified mentorship, and real opportunity.">
-  <meta name="twitter:image" content="https://www.socioturtle.com/images/logo_socioturtle.png">
+  <meta name="twitter:image" content="https://www.socioturtle.com/images/og-card.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SocioTurtle",
+    "legalName": "SocioTurtle Technologies LLP",
+    "url": "https://www.socioturtle.com/",
+    "logo": "https://www.socioturtle.com/images/logo_socioturtle.png",
+    "description": "A technology-enabled career intelligence platform empowering women students with personalized guidance, verified mentorship, and real opportunity.",
+    "email": "contact@socioturtle.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pune",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Poonam Pal",
+      "sameAs": "https://www.linkedin.com/in/poonampalz"
+    },
+    "sameAs": [
+      "https://www.instagram.com/socioturtle/",
+      "https://x.com/socioturtle",
+      "https://www.linkedin.com/in/socioturtle/"
+    ]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,25 +78,26 @@
 </head>
 
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+  <a href="#main" class="skip-link">Skip to content</a>
   <!-- Navigation Bar -->
   <header class="site-header fixed w-full z-10">
     <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-      <div class="flex items-center space-x-2" onclick="showPage('home')">
-        <img src="./images/logo_socioturtle.png" alt="Socioturtle Logo" class="h-10 w-10 object-contain">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img height="138" width="120" src="./images/logo_socioturtle.webp" alt="Socioturtle Logo" class="h-10 w-10 object-contain">
         <span class="text-xl font-semibold text-light">SocioTurtle</span>
-      </div>
+      </a>
 
       <nav class="hidden lg:flex items-center gap-6 whitespace-nowrap" aria-label="Main">
-        <!-- <button onclick="showPage('home')" class="nav-link font-medium hover:text-primary">Home</button> -->
-        <button onclick="showPage('about')" class="nav-link font-medium hover:text-primary">About Us</button>
+        <a href="#home" data-page="home" class="nav-link font-medium hover:text-primary" aria-current="page">Home</a>
+        <a href="#about" data-page="about" class="nav-link font-medium hover:text-primary">About Us</a>
         <a href="archives.html" class="nav-link font-medium hover:text-primary">Our Journey</a>
-        <button onclick="showPage('gallery')" class="nav-link font-medium hover:text-primary">Gallery</button>
-        <button onclick="showPage('testimonials')" class="nav-link font-medium hover:text-primary">Testimonials</button>
-        <button onclick="showPage('investors')" class="nav-link font-medium hover:text-primary">Investors</button>
-        <button onclick="showPage('contact')" class="nav-link font-medium hover:text-primary">Contact Us</button>
+        <a href="#gallery" data-page="gallery" class="nav-link font-medium hover:text-primary">Gallery</a>
+        <a href="#testimonials" data-page="testimonials" class="nav-link font-medium hover:text-primary">Testimonials</a>
+        <a href="#investors" data-page="investors" class="nav-link font-medium hover:text-primary">Investors</a>
+        <a href="#contact" data-page="contact" class="nav-link font-medium hover:text-primary">Contact Us</a>
         <a href="https://bhau.org/" target="_blank" rel="noopener noreferrer"
           class="hidden xl:inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full pl-1.5 pr-3 py-1 hover:bg-white/20 transition">
-          <img src="./images/bhau-institute-logo.jpg" alt="" width="480" height="420"
+          <img src="./images/bhau-institute-logo.webp" alt="" width="96" height="84"
             class="h-6 w-6 rounded-full object-contain bg-white" loading="lazy" decoding="async">
           <span class="text-xs text-white/90">Incubated at COEP BHAU Institute</span>
         </a>
@@ -79,15 +112,15 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="site-mobile-menu hidden lg:hidden">
       <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
-        <!-- <button onclick="showPage('home')" class="nav-link font-medium py-2">Home</button> -->
-        <button onclick="showPage('about')" class="nav-link font-medium py-2">About Us</button>
+        <a href="#home" data-page="home" class="nav-link font-medium py-2" aria-current="page">Home</a>
+        <a href="#about" data-page="about" class="nav-link font-medium py-2">About Us</a>
         <a href="archives.html" class="nav-link font-medium py-2">Our Journey</a>
-        <button onclick="showPage('gallery')" class="nav-link font-medium py-2">Gallery</button>
-        <button onclick="showPage('testimonials')" class="nav-link font-medium py-2">Testimonials</button>
-        <button onclick="showPage('investors')" class="nav-link font-medium py-2">Investors</button>
-        <button onclick="showPage('contact')" class="nav-link font-medium py-2">Contact Us</button>
+        <a href="#gallery" data-page="gallery" class="nav-link font-medium py-2">Gallery</a>
+        <a href="#testimonials" data-page="testimonials" class="nav-link font-medium py-2">Testimonials</a>
+        <a href="#investors" data-page="investors" class="nav-link font-medium py-2">Investors</a>
+        <a href="#contact" data-page="contact" class="nav-link font-medium py-2">Contact Us</a>
         <a href="https://bhau.org/" target="_blank" rel="noopener noreferrer" class="nav-link font-medium py-2 flex items-center gap-2">
-          <img src="./images/bhau-institute-logo.jpg" alt="" width="480" height="420"
+          <img src="./images/bhau-institute-logo.webp" alt="" width="96" height="84"
             class="h-5 w-5 rounded-full object-contain bg-white" loading="lazy" decoding="async">
           Incubated at COEP BHAU Institute
         </a>
@@ -96,7 +129,7 @@
   </header>
 
   <!-- Main Content Area -->
-  <main class="pt-20 pb-28 flex-1">
+  <main id="main" class="pt-20 pb-28 flex-1">
     <!-- Home Page -->
     <section id="home" class="page active-page">
 
@@ -139,10 +172,10 @@
               class="bg-primary text-dark px-6 py-3 rounded-lg font-semibold hover:bg-secondary transition">
               Join Free &mdash; Takes 30 Seconds
             </a>
-            <button onclick="goToEcosystem()"
+            <a href="#ecosystem"
               class="bg-white border border-gray-300 text-gray-800 px-6 py-3 rounded-lg font-semibold hover:border-primary transition">
               See How It Works
-            </button>
+            </a>
           </div>
 
           <p class="mt-6 text-sm text-gray-600">
@@ -156,14 +189,14 @@
           <h2 class="roles-heading text-3xl font-bold mb-6">Who is this for?</h2>
 
           <div class="flex flex-wrap justify-center gap-4 mb-8">
-            <button onclick="switchRole('student', this)" class="role-btn role-btn-student active">Student</button>
-            <button onclick="switchRole('educator', this)" class="role-btn role-btn-educator">Educator</button>
-            <button onclick="switchRole('employer', this)" class="role-btn role-btn-employer">Employer</button>
+            <button type="button" data-role-switch="student" aria-pressed="true" class="role-btn role-btn-student active">Student</button>
+            <button type="button" data-role-switch="educator" aria-pressed="false" class="role-btn role-btn-educator">Educator</button>
+            <button type="button" data-role-switch="employer" aria-pressed="false" class="role-btn role-btn-employer">Employer</button>
           </div>
 
           <!-- Dynamic Content -->
           <div class="stagger flex justify-center">
-            <div id="roleContent" class="role-card role-card-student">
+            <div id="roleContent" class="role-card role-card-student" aria-live="polite">
             </div>
           </div>
 
@@ -206,7 +239,7 @@
 
               <!-- Nodes -->
               <!-- STUDENT -->
-              <div class="eco-node top-node" data-role="student">
+              <div class="eco-node top-node" data-role="student" role="button" tabindex="0" aria-pressed="true">
                 <i class="fas fa-user-graduate"></i>
                 <span>Student</span>
                 <div class="node-info">Builds real-world skills</div>
@@ -216,7 +249,7 @@
               </div>
 
               <!-- EDUCATOR -->
-              <div class="eco-node left-node" data-role="educator">
+              <div class="eco-node left-node" data-role="educator" role="button" tabindex="0" aria-pressed="false">
                 <i class="fas fa-chalkboard-teacher"></i>
                 <span>Educator</span>
                 <div class="node-info">Validates & mentors</div>
@@ -226,7 +259,7 @@
               </div>
 
               <!-- EMPLOYER -->
-              <div class="eco-node right-node" data-role="employer">
+              <div class="eco-node right-node" data-role="employer" role="button" tabindex="0" aria-pressed="false">
                 <i class="fas fa-building"></i>
                 <span>Employer</span>
                 <div class="node-info">Discovers talent</div>
@@ -313,7 +346,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-10 max-w-3xl mx-auto">
             <figure class="relative bg-dark text-white rounded-2xl shadow-lg pt-16 pb-8 px-8 text-center">
               <div class="absolute top-0 left-0 right-0 h-1.5 rounded-t-2xl bg-gradient-to-r from-primary to-secondary" aria-hidden="true"></div>
-              <img src="./images/testimonials/sanika.jpg" alt="Portrait of Sanika" width="560" height="560"
+              <img src="./images/testimonials/sanika.webp" alt="Portrait of Sanika" width="192" height="192"
                 class="absolute -top-10 left-1/2 -translate-x-1/2 w-24 h-24 rounded-full object-cover border-4 border-dark shadow-lg"
                 loading="lazy" decoding="async">
               <i class="fas fa-quote-left text-primary text-2xl mb-4 block" aria-hidden="true"></i>
@@ -326,7 +359,7 @@
 
             <figure class="relative bg-dark text-white rounded-2xl shadow-lg pt-16 pb-8 px-8 text-center">
               <div class="absolute top-0 left-0 right-0 h-1.5 rounded-t-2xl bg-gradient-to-r from-primary to-secondary" aria-hidden="true"></div>
-              <img src="./images/testimonials/sneha.jpg" alt="Portrait of Sneha" width="560" height="560"
+              <img src="./images/testimonials/sneha.webp" alt="Portrait of Sneha" width="192" height="192"
                 class="absolute -top-10 left-1/2 -translate-x-1/2 w-24 h-24 rounded-full object-cover border-4 border-dark shadow-lg"
                 loading="lazy" decoding="async">
               <i class="fas fa-quote-left text-primary text-2xl mb-4 block" aria-hidden="true"></i>
@@ -354,21 +387,21 @@
 
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <figure class="bg-white rounded-xl shadow-md overflow-hidden">
-              <img src="./images/gallery/bvp6.jpg"
+              <img src="./images/gallery/bvp6.webp"
                 alt="Speaking at a podium during a keynote session titled Two Hours, Seven Stops at Bharati Vidyapeeth's College of Engineering for Women, Pune"
-                width="1100" height="825" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
+                width="900" height="675" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
               <figcaption class="p-6 text-gray-700 text-sm">Two hours, seven stops &mdash; turning a CS degree into a real career map.</figcaption>
             </figure>
             <figure class="bg-white rounded-xl shadow-md overflow-hidden">
-              <img src="./images/gallery/bvp4.jpg"
+              <img src="./images/gallery/bvp4.webp"
                 alt="One-on-one mentoring conversation with a student at the College of Engineering for Women, Pune"
-                width="1100" height="825" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
+                width="900" height="675" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
               <figcaption class="p-6 text-gray-700 text-sm">Mentorship starts with listening, not lecturing.</figcaption>
             </figure>
             <figure class="bg-white rounded-xl shadow-md overflow-hidden">
-              <img src="./images/gallery/bvp-team.jpg"
+              <img src="./images/gallery/bvp-team.webp"
                 alt="Group photo with a team of students making peace signs in a classroom"
-                width="1100" height="825" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
+                width="900" height="675" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
               <figcaption class="p-6 text-gray-700 text-sm">The students who make every campus visit worth it.</figcaption>
             </figure>
           </div>
@@ -496,7 +529,7 @@
             <div class="about-founder-card">
               <div class="about-founder-media">
                 <div class="about-founder-frame">
-                  <img src="./images/founder_pic.jpg" alt="Poonam Pal, Founder of SocioTurtle" width="1153" height="1364"
+                  <img src="./images/founder_pic.webp" alt="Poonam Pal, Founder of SocioTurtle" width="840" height="994"
                     class="about-founder-image" loading="lazy" decoding="async">
                 </div>
                 <div class="about-founder-note">
@@ -607,7 +640,7 @@
           <div class="max-w-2xl mx-auto">
 
             <figure class="bg-white rounded-xl shadow-md overflow-hidden">
-              <img src="./images/story-mentor.jpg"
+              <img src="./images/story-mentor.webp"
                 alt="Comic strip 'The Mentor Who Was Once Lost': a junior turtle feels overwhelmed by choices like career, skills, internships, and higher studies. A senior turtle offers to explore it together, admitting she was once just as lost, and they walk forward together. Lesson: today's guide was once finding their way too."
                 width="1200" height="800" class="w-full" loading="lazy" decoding="async">
             </figure>
@@ -632,9 +665,9 @@
         <!-- Investors & Partners -->
         <div class="bg-white rounded-xl shadow-md p-8 mb-16">
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <img src="./images/imc/flyer-investors.jpg"
+            <img src="./images/imc/flyer-investors.webp"
               alt="SocioTurtle investor flyer: Building India's Next Generation of Career-Ready Women, vision, mission, approach, early traction, and partnership opportunities"
-              width="1300" height="1733" class="w-full max-w-sm mx-auto rounded-xl shadow-md" loading="lazy"
+              width="800" height="1066" class="w-full max-w-sm mx-auto rounded-xl shadow-md" loading="lazy"
               decoding="async">
             <div>
               <h3 class="font-semibold text-lg mb-3">Early Traction</h3>
@@ -663,14 +696,14 @@
                 <li class="flex items-start gap-2 col-span-2"><i class="fas fa-handshake text-secondary mt-1"></i> Internship &amp; Placement Partners</li>
               </ul>
               <div class="flex flex-wrap gap-3">
-                <button onclick="showPage('contact')"
-                  class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-secondary transition">
+                <a href="#contact" data-page="contact"
+                  class="inline-block bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-secondary transition">
                   Partner With Us
-                </button>
-                <button onclick="showPage('contact')"
-                  class="bg-white border border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition">
+                </a>
+                <a href="#contact" data-page="contact"
+                  class="inline-block bg-white border border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition">
                   Request Our Pitch Deck
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -760,8 +793,8 @@
       <div class="container mx-auto px-4 py-16">
 
         <div class="text-center mb-16">
-          <img src="./images/founding-member-badge.jpg" alt="SocioTurtle Founding Member badge" width="300"
-            height="300" class="w-20 h-20 mx-auto mb-4 rounded-full shadow-md" loading="lazy" decoding="async">
+          <img src="./images/founding-member-badge.webp" alt="SocioTurtle Founding Member badge" width="160"
+            height="160" class="w-20 h-20 mx-auto mb-4 rounded-full shadow-md" loading="lazy" decoding="async">
           <h1 class="text-4xl font-bold mb-4">Founding Members Testimonials</h1>
           <p class="text-xl text-gray-600 max-w-3xl mx-auto">
             Real words from the students shaping SocioTurtle's earliest community.
@@ -772,7 +805,7 @@
 
           <div class="relative bg-dark text-white rounded-2xl shadow-lg pt-16 pb-8 px-8 text-center">
             <div class="absolute top-0 left-0 right-0 h-1.5 rounded-t-2xl bg-gradient-to-r from-primary to-secondary" aria-hidden="true"></div>
-            <img src="./images/testimonials/sanika.jpg" alt="Portrait of Sanika" width="560" height="560"
+            <img src="./images/testimonials/sanika.webp" alt="Portrait of Sanika" width="192" height="192"
               class="absolute -top-10 left-1/2 -translate-x-1/2 w-24 h-24 rounded-full object-cover border-4 border-dark shadow-lg"
               loading="lazy" decoding="async">
             <i class="fas fa-quote-left text-primary text-2xl mb-4 block" aria-hidden="true"></i>
@@ -786,7 +819,7 @@
 
           <div class="relative bg-dark text-white rounded-2xl shadow-lg pt-16 pb-8 px-8 text-center">
             <div class="absolute top-0 left-0 right-0 h-1.5 rounded-t-2xl bg-gradient-to-r from-primary to-secondary" aria-hidden="true"></div>
-            <img src="./images/testimonials/aditi.jpg" alt="Portrait of Aditi" width="560" height="560"
+            <img src="./images/testimonials/aditi.webp" alt="Portrait of Aditi" width="192" height="192"
               class="absolute -top-10 left-1/2 -translate-x-1/2 w-24 h-24 rounded-full object-cover border-4 border-dark shadow-lg"
               loading="lazy" decoding="async">
             <i class="fas fa-quote-left text-primary text-2xl mb-4 block" aria-hidden="true"></i>
@@ -799,7 +832,7 @@
 
           <div class="relative bg-dark text-white rounded-2xl shadow-lg pt-16 pb-8 px-8 text-center">
             <div class="absolute top-0 left-0 right-0 h-1.5 rounded-t-2xl bg-gradient-to-r from-primary to-secondary" aria-hidden="true"></div>
-            <img src="./images/testimonials/sneha.jpg" alt="Portrait of Sneha" width="560" height="560"
+            <img src="./images/testimonials/sneha.webp" alt="Portrait of Sneha" width="192" height="192"
               class="absolute -top-10 left-1/2 -translate-x-1/2 w-24 h-24 rounded-full object-cover border-4 border-dark shadow-lg"
               loading="lazy" decoding="async">
             <i class="fas fa-quote-left text-primary text-2xl mb-4 block" aria-hidden="true"></i>
@@ -814,7 +847,7 @@
 
           <div class="relative bg-dark text-white rounded-2xl shadow-lg pt-16 pb-8 px-8 text-center">
             <div class="absolute top-0 left-0 right-0 h-1.5 rounded-t-2xl bg-gradient-to-r from-primary to-secondary" aria-hidden="true"></div>
-            <img src="./images/testimonials/jyoti.jpg" alt="Portrait of Jyoti" width="560" height="560"
+            <img src="./images/testimonials/jyoti.webp" alt="Portrait of Jyoti" width="192" height="192"
               class="absolute -top-10 left-1/2 -translate-x-1/2 w-24 h-24 rounded-full object-cover border-4 border-dark shadow-lg"
               loading="lazy" decoding="async">
             <i class="fas fa-quote-left text-primary text-2xl mb-4 block" aria-hidden="true"></i>
@@ -857,10 +890,10 @@
             here.
           </p>
 
-          <button onclick="showPage('contact')"
-            class="bg-white text-primary font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300">
+          <a href="#contact" data-page="contact"
+            class="inline-block bg-white text-primary font-semibold py-3 px-8 rounded-lg hover:bg-gray-100 transition duration-300">
             Get in Touch
-          </button>
+          </a>
 
         </div>
 
@@ -881,9 +914,9 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
           <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src="./images/gallery/bvp-team.jpg"
+            <img src="./images/gallery/bvp-team.webp"
               alt="Group photo with a team of students making peace signs in a classroom"
-              width="1100" height="825" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
+              width="900" height="675" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
             <div class="p-6">
               <p class="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Team Moment</p>
               <p class="text-gray-700 text-sm">The students who make every campus visit worth it.</p>
@@ -891,9 +924,9 @@
           </div>
 
           <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src="./images/gallery/bvp6.jpg"
+            <img src="./images/gallery/bvp6.webp"
               alt="Speaking at a podium during a keynote session titled Two Hours, Seven Stops at Bharati Vidyapeeth's College of Engineering for Women, Pune"
-              width="1100" height="825" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
+              width="900" height="675" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
             <div class="p-6">
               <p class="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Keynote Talk</p>
               <p class="text-gray-700 text-sm">Two hours, seven stops — turning a CS degree into a real career map.</p>
@@ -901,9 +934,9 @@
           </div>
 
           <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src="./images/gallery/bvp1.jpg"
+            <img src="./images/gallery/bvp1.webp"
               alt="Reviewing a student's project with fellow panelists at Bharati Vidyapeeth's College of Engineering for Women, Pune"
-              width="1100" height="825" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
+              width="900" height="675" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
             <div class="p-6">
               <p class="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Panel Review</p>
               <p class="text-gray-700 text-sm">Every review starts with one real question: does this solve a real
@@ -912,9 +945,9 @@
           </div>
 
           <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src="./images/gallery/bvp2.jpg"
+            <img src="./images/gallery/bvp2.webp"
               alt="Discussing a student project proposal during a panel review session"
-              width="1100" height="825" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
+              width="900" height="675" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
             <div class="p-6">
               <p class="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Panel Review</p>
               <p class="text-gray-700 text-sm">Sharper questions build sharper founders.</p>
@@ -922,8 +955,8 @@
           </div>
 
           <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src="./images/gallery/bvp3.jpg" alt="Panel of reviewers listening to a student present her project"
-              width="1100" height="619" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
+            <img src="./images/gallery/bvp3.webp" alt="Panel of reviewers listening to a student present her project"
+              width="900" height="506" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
             <div class="p-6">
               <p class="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Panel Review</p>
               <p class="text-gray-700 text-sm">Spotting real potential before the pitch is polished.</p>
@@ -931,9 +964,9 @@
           </div>
 
           <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src="./images/gallery/bvp4.jpg"
+            <img src="./images/gallery/bvp4.webp"
               alt="One-on-one mentoring conversation with a student at the College of Engineering for Women, Pune"
-              width="1100" height="825" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
+              width="900" height="675" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
             <div class="p-6">
               <p class="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Mentoring Session</p>
               <p class="text-gray-700 text-sm">Mentorship starts with listening, not lecturing.</p>
@@ -941,9 +974,9 @@
           </div>
 
           <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src="./images/gallery/bvp5.jpg"
+            <img src="./images/gallery/bvp5.webp"
               alt="Sitting down for a one-on-one discussion with a student in an office setting"
-              width="1100" height="825" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
+              width="900" height="675" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
             <div class="p-6">
               <p class="text-xs font-semibold text-primary uppercase tracking-wide mb-2">One-on-One</p>
               <p class="text-gray-700 text-sm">The real work happens in the one-on-one conversations.</p>
@@ -951,9 +984,9 @@
           </div>
 
           <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src="./images/gallery/cbhau1.jpg"
+            <img src="./images/gallery/cbhau1.webp"
               alt="Students showing a laptop screen near the S L Kirloskar Auditorium"
-              width="1100" height="494" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
+              width="900" height="404" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
             <div class="p-6">
               <p class="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Campus Walkthrough</p>
               <p class="text-gray-700 text-sm">Curiosity doesn't wait for the session to start.</p>
@@ -961,8 +994,8 @@
           </div>
 
           <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src="./images/gallery/cbhau2.jpg"
-              alt="Standing in front of a wall of startup logos at COEP BHAU Institute" width="1100" height="494"
+            <img src="./images/gallery/cbhau2.webp"
+              alt="Standing in front of a wall of startup logos at COEP BHAU Institute" width="900" height="404"
               class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
             <div class="p-6">
               <p class="text-xs font-semibold text-primary uppercase tracking-wide mb-2">COEP BHAU Startup Wall</p>
@@ -971,9 +1004,9 @@
           </div>
 
           <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src="./images/gallery/bvp7.jpg"
+            <img src="./images/gallery/bvp7.webp"
               alt="Collage of moments from a campus visit, including a keynote talk, a panel discussion, and group photos with students"
-              width="1100" height="695" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
+              width="900" height="569" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
             <div class="p-6">
               <p class="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Campus Day</p>
               <p class="text-gray-700 text-sm">A day on campus: talks, panels, and students ready to build.</p>
@@ -981,7 +1014,7 @@
           </div>
 
           <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
-            <img src="./images/gallery/cbhau3.jpg" alt="Selfie with family in an auditorium full of attendees"
+            <img src="./images/gallery/cbhau3.webp" alt="Selfie with family in an auditorium full of attendees"
               width="494" height="1100" class="w-full aspect-[4/3] object-cover" loading="lazy" decoding="async">
             <div class="p-6">
               <p class="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Celebrating Together</p>
@@ -1029,7 +1062,7 @@
                       </p>
                     </div>
 
-                    <a href="https://forms.gle/ANZFyAmjvGzHyo3R7" target="_blank"
+                    <a href="https://forms.gle/ANZFyAmjvGzHyo3R7" target="_blank" rel="noopener noreferrer"
                       class="survey-link ml-4 bg-primary text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-secondary transition whitespace-nowrap">
                       Take Survey →
                     </a>
@@ -1148,7 +1181,7 @@
                   <i class="fas fa-users text-purple-500 mt-1 mr-4"></i>
                   <div>
                     <h3 class="font-semibold text-sm">Join Community</h3>
-                    <a href="https://chat.whatsapp.com/KrPu6XxkGOnK53jI1gMogB?mode=gi_t" target="_blank"
+                    <a href="https://chat.whatsapp.com/KrPu6XxkGOnK53jI1gMogB?mode=gi_t" target="_blank" rel="noopener noreferrer"
                       class="text-gray-600 hover:text-primary">
                       Join WhatsApp Group 🚀
                     </a>
@@ -1181,7 +1214,7 @@
     <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
       <!-- Logo + Tagline -->
       <div class="flex items-center space-x-2">
-        <img src="./images/logo_socioturtle.png" class="h-7 w-7 object-contain">
+        <img height="138" width="120" src="./images/logo_socioturtle.webp" class="h-7 w-7 object-contain" alt="">
         <span class="font-semibold">SocioTurtle</span>
         <span class="text-gray-400 text-sm hidden md:inline">
           Learn • Teach • Hire
@@ -1196,19 +1229,19 @@
       <!-- Social Icons -->
       <div class="flex space-x-4 text-gray-400">
 
-        <a href="https://x.com/socioturtle" class="hover:text-white">
-          <i class="fab fa-x"></i>
+        <a href="https://x.com/socioturtle" class="hover:text-white" aria-label="SocioTurtle on X">
+          <i class="fab fa-x" aria-hidden="true"></i>
         </a>
 
-        <a href="https://www.instagram.com/socioturtle/" class="hover:text-white">
-          <i class="fab fa-instagram"></i>
+        <a href="https://www.instagram.com/socioturtle/" class="hover:text-white" aria-label="SocioTurtle on Instagram">
+          <i class="fab fa-instagram" aria-hidden="true"></i>
         </a>
-        <a href="https://www.linkedin.com/in/socioturtle/" class="hover:text-white">
-          <i class="fab fa-linkedin-in"></i>
+        <a href="https://www.linkedin.com/in/socioturtle/" class="hover:text-white" aria-label="SocioTurtle on LinkedIn">
+          <i class="fab fa-linkedin-in" aria-hidden="true"></i>
         </a>
         <a href="https://bhau.org/" target="_blank" rel="noopener noreferrer" title="Incubated at COEP BHAU Institute"
           aria-label="Incubated at COEP BHAU Institute (opens bhau.org)" class="hover:opacity-80">
-          <img src="./images/bhau-institute-logo.jpg" alt="" width="480" height="420"
+          <img src="./images/bhau-institute-logo.webp" alt="" width="96" height="84"
             class="h-5 w-5 rounded-full object-contain bg-white" loading="lazy" decoding="async">
         </a>
       </div>

@@ -38,11 +38,16 @@ const roleData = {
   }
 };
 
-// default
 window.onload = () => {
-  const firstBtn = document.querySelector(".role-btn");
-  switchRole("student", firstBtn);
+  switchRole("student");
 };
+
+document.addEventListener("click", event => {
+  const roleButton = event.target.closest("[data-role-switch]");
+  if (!roleButton) return;
+
+  switchRole(roleButton.dataset.roleSwitch);
+});
 
 function closeMobileMenu() {
   document.getElementById("mobile-menu").classList.add("hidden");
@@ -93,21 +98,17 @@ function showPage(pageId) {
     selectedPage.classList.add("active-page");
   }
 
+  document.querySelectorAll("header [data-page]").forEach(link => {
+    if (link.dataset.page === pageId) {
+      link.setAttribute("aria-current", "page");
+    } else {
+      link.removeAttribute("aria-current");
+    }
+  });
+
   closeMobileMenu();
 
   window.scrollTo(0, 0);
-}
-
-function goToEcosystem() {
-  showPage("home");
-
-  requestAnimationFrame(() => {
-    const ecosystemSection = document.getElementById("ecosystem");
-
-    if (ecosystemSection) {
-      ecosystemSection.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  });
 }
 
 // Registration modal logic
@@ -356,7 +357,7 @@ function resetRegisterForm() {
   document.getElementById('regVerifyOtpBtn').addEventListener('click', verifyRegOtp);
 })();
 
-function switchRole(role, el = null) {
+function switchRole(role) {
   const container = document.getElementById("roleContent");
   const data = roleData[role];
   container.className = `role-card role-card-${role}`;
@@ -370,7 +371,7 @@ function switchRole(role, el = null) {
       <ul class="role-highlights">
         ${data.highlights.map(item => `
           <li class="role-highlight-item">
-            <span class="role-highlight-icon"><i class="fas fa-check"></i></span>
+            <span class="role-highlight-icon" aria-hidden="true"><i class="fas fa-check"></i></span>
             <span>${item}</span>
           </li>
         `).join("")}
@@ -380,13 +381,11 @@ function switchRole(role, el = null) {
     </div>
   `;
 
-  document.querySelectorAll(".role-btn").forEach(btn => {
-    btn.classList.remove("active");
+  document.querySelectorAll("[data-role-switch]").forEach(button => {
+    const isActive = button.dataset.roleSwitch === role;
+    button.classList.toggle("active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
   });
-
-  if (el) {
-    el.classList.add("active");
-  }
 }
 
 const observer = new IntersectionObserver(entries => {
@@ -399,26 +398,6 @@ const observer = new IntersectionObserver(entries => {
 
 document.querySelectorAll(".fade-in, .stagger").forEach(el => {
   observer.observe(el);
-});
-
-const counters = document.querySelectorAll(".counter");
-
-counters.forEach(counter => {
-  const update = () => {
-    const target = +counter.getAttribute("data-target");
-    const count = +counter.innerText;
-
-    const increment = target / 50;
-
-    if (count < target) {
-      counter.innerText = Math.ceil(count + increment);
-      setTimeout(update, 30);
-    } else {
-      counter.innerText = target;
-    }
-  };
-
-  update();
 });
 
 const observerFlow = new IntersectionObserver(entries => {
@@ -455,6 +434,14 @@ nodes.forEach(node => {
     wrapper.classList.add(`${role}-active`);
 
     activeNode = node;
+    nodes.forEach(n => n.setAttribute("aria-pressed", String(n === node)));
+  });
+
+  node.addEventListener("keydown", e => {
+    if (e.key !== "Enter" && e.key !== " ") return;
+
+    e.preventDefault();
+    node.click();
   });
 
   node.addEventListener("mouseenter", () => {
