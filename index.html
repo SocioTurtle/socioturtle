@@ -57,6 +57,7 @@
       <nav class="hidden md:flex items-center space-x-8">
         <!-- <button onclick="showPage('home')" class="nav-link font-medium hover:text-primary">Home</button> -->
         <button onclick="showPage('about')" class="nav-link font-medium hover:text-primary">About Us</button>
+        <a href="archives.html" class="nav-link font-medium hover:text-primary">Our Journey</a>
         <button onclick="showPage('gallery')" class="nav-link font-medium hover:text-primary">Gallery</button>
         <button onclick="showPage('testimonials')" class="nav-link font-medium hover:text-primary">Testimonials</button>
         <button onclick="showPage('investors')" class="nav-link font-medium hover:text-primary">Investors</button>
@@ -79,6 +80,7 @@
       <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
         <!-- <button onclick="showPage('home')" class="nav-link font-medium py-2">Home</button> -->
         <button onclick="showPage('about')" class="nav-link font-medium py-2">About Us</button>
+        <a href="archives.html" class="nav-link font-medium py-2">Our Journey</a>
         <button onclick="showPage('gallery')" class="nav-link font-medium py-2">Gallery</button>
         <button onclick="showPage('testimonials')" class="nav-link font-medium py-2">Testimonials</button>
         <button onclick="showPage('investors')" class="nav-link font-medium py-2">Investors</button>
@@ -99,18 +101,17 @@
 
       <!-- Announcement Banner -->
       <div
-        class="announcement-banner flex items-center justify-center gap-x-6 gap-y-2 flex-wrap text-white text-center text-sm md:text-base px-4 py-4">
-        <a href="imc.html" class="inline-flex items-center gap-2 flex-wrap justify-center hover:opacity-85 transition">
+        class="announcement-banner flex items-center justify-center gap-x-6 gap-y-2 flex-wrap text-white text-center text-sm md:text-base pl-4 pr-20 md:px-4 py-4">
+        <a href="#join" data-open-register class="inline-flex items-center gap-2 flex-wrap justify-center hover:opacity-85 transition">
           <span class="announcement-dot" aria-hidden="true"></span>
-          <span class="font-bold">🚀 LIVE:</span>
-          <span>IMC 2026, 7&ndash;10 October</span>
-          <span class="underline underline-offset-2 font-semibold">Learn more →</span>
+          <span class="font-bold">Founding community now open:</span>
+          <span class="underline underline-offset-2 font-semibold">Join free →</span>
         </a>
         <span class="hidden sm:inline text-white/40" aria-hidden="true">|</span>
-        <a href="brics.html" class="inline-flex items-center gap-2 flex-wrap justify-center hover:opacity-85 transition">
-          <span class="font-bold">📰 NEW:</span>
-          <span>BRICS ICT Track Event</span>
-          <span class="underline underline-offset-2 font-semibold">Learn more →</span>
+        <a href="archives.html" class="inline-flex items-center gap-2 flex-wrap justify-center hover:opacity-85 transition">
+          <span class="font-bold">Our journey:</span>
+          <span>IMC 2026 &amp; BRICS ICT Track</span>
+          <span class="underline underline-offset-2 font-semibold">See the archives →</span>
         </a>
       </div>
 
@@ -132,9 +133,20 @@
             future-ready career.
           </p>
 
-          <button onclick="goToEcosystem()" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold">
-            See How It Works
-          </button>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#join" data-open-register
+              class="bg-primary text-dark px-6 py-3 rounded-lg font-semibold hover:bg-secondary transition">
+              Join Free &mdash; Takes 30 Seconds
+            </a>
+            <button onclick="goToEcosystem()"
+              class="bg-white border border-gray-300 text-gray-800 px-6 py-3 rounded-lg font-semibold hover:border-primary transition">
+              See How It Works
+            </button>
+          </div>
+
+          <p class="mt-6 text-sm text-gray-600">
+            Incubated at COEP BHAU Institute &middot; DPIIT recognised &middot; Patent published
+          </p>
         </div>
 
         <!-- 👥 ROLES -->
@@ -142,7 +154,7 @@
         <div class="text-center">
           <h2 class="roles-heading text-3xl font-bold mb-6">Who is this for?</h2>
 
-          <div class="flex justify-center space-x-4 mb-8">
+          <div class="flex flex-wrap justify-center gap-4 mb-8">
             <button onclick="switchRole('student', this)" class="role-btn role-btn-student active">Student</button>
             <button onclick="switchRole('educator', this)" class="role-btn role-btn-educator">Educator</button>
             <button onclick="switchRole('employer', this)" class="role-btn role-btn-employer">Employer</button>
@@ -281,6 +293,20 @@
           </div>
 
         </div>
+
+        <!-- JOIN -->
+        <section id="join" class="bg-dark text-white rounded-xl p-8 md:p-12 text-center scroll-mt-28"
+          aria-labelledby="join-heading">
+          <h2 id="join-heading" class="text-3xl font-bold mb-4">Your Career Story Starts Here</h2>
+          <p class="text-gray-300 max-w-2xl mx-auto mb-8">
+            Create your free account and explore career guidance, mentorship, and opportunities inside the
+            SocioTurtle portal.
+          </p>
+          <a href="#join" data-open-register
+            class="inline-block bg-primary text-dark px-8 py-3 rounded-lg font-semibold hover:bg-white transition">
+            Join SocioTurtle Free
+          </a>
+        </section>
       </div>
 
     </section>
@@ -633,31 +659,21 @@
         </div>
 
         <div class="mt-16 bg-white rounded-xl shadow-md p-8">
-          <h2 class="text-3xl font-bold mb-2 text-center">Become a Founding Member</h2>
-          <p class="text-gray-600 text-center max-w-2xl mx-auto mb-10">
-            Get personalized guidance to build a confident and successful career.
+          <h2 class="text-3xl font-bold mb-2 text-center">Join the Founding Community</h2>
+          <p class="text-gray-600 text-center max-w-2xl mx-auto mb-8">
+            Get personalized guidance to build a confident and successful career. Joining is free.
           </p>
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <img src="./images/imc/flyer-students.jpg"
-              alt="SocioTurtle student flyer: Become Founding Members, personalized career assessment, soft skills development, mentorship, and internships for ₹399 one-time membership"
-              width="1300" height="1733" class="w-full max-w-sm mx-auto rounded-xl shadow-md order-2 lg:order-1"
-              loading="lazy" decoding="async">
-            <div class="order-1 lg:order-2">
-              <ul class="space-y-3 mb-6 text-sm text-gray-700">
-                <li class="flex items-start gap-2"><i class="fas fa-bullseye text-primary mt-1"></i> Personalized Career Assessment &mdash; discover your strengths and career pathway</li>
-                <li class="flex items-start gap-2"><i class="fas fa-user-group text-primary mt-1"></i> Soft Skills Development &mdash; communicate, collaborate, and lead with confidence</li>
-                <li class="flex items-start gap-2"><i class="fas fa-chalkboard-user text-primary mt-1"></i> Mentorship &mdash; learn from industry experts</li>
-                <li class="flex items-start gap-2"><i class="fas fa-briefcase text-primary mt-1"></i> Internships &amp; Opportunities &mdash; curated internships, scholarships, and competitions</li>
-              </ul>
-              <div class="flex items-center gap-4 mb-6">
-                <span class="bg-gradient-to-r from-primary to-secondary text-white text-2xl font-bold px-5 py-3 rounded-lg">₹399</span>
-                <span class="text-sm text-gray-600">One-time Founding Member fee</span>
-              </div>
-              <a href="https://forms.gle/Q35893Xg42MVkgYC7" target="_blank" rel="noopener noreferrer"
-                class="inline-block bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-secondary transition">
-                Become a Founding Member
-              </a>
-            </div>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto mb-8 text-sm text-gray-700">
+            <li class="flex items-start gap-2"><i class="fas fa-bullseye text-primary mt-1" aria-hidden="true"></i> Personalized Career Assessment &mdash; discover your strengths and career pathway</li>
+            <li class="flex items-start gap-2"><i class="fas fa-user-group text-primary mt-1" aria-hidden="true"></i> Soft Skills Development &mdash; communicate, collaborate, and lead with confidence</li>
+            <li class="flex items-start gap-2"><i class="fas fa-chalkboard-user text-primary mt-1" aria-hidden="true"></i> Mentorship &mdash; learn from industry experts</li>
+            <li class="flex items-start gap-2"><i class="fas fa-briefcase text-primary mt-1" aria-hidden="true"></i> Internships &amp; Opportunities &mdash; curated internships, scholarships, and competitions</li>
+          </ul>
+          <div class="text-center">
+            <a href="#join" data-open-register
+              class="inline-block bg-primary text-dark px-6 py-3 rounded-lg font-semibold hover:bg-secondary transition">
+              Join SocioTurtle Free
+            </a>
           </div>
         </div>
 
@@ -1035,15 +1051,15 @@
 
     <!-- Membership Button -->
     <div class="relative mb-3 membership-cta">
-      <span class="register-flash-badge hidden sm:inline-flex" aria-hidden="true">🏀 Dunk here →</span>
-      <a href="https://forms.gle/Q35893Xg42MVkgYC7" target="_blank" rel="noopener"
-        class="join-btn jelly-btn flex items-center justify-center relative" aria-label="Become a Member" title="Become a Member">
+      <span class="register-flash-badge hidden sm:inline-flex" aria-hidden="true">Join free →</span>
+      <a href="#join" data-open-register
+        class="join-btn jelly-btn flex items-center justify-center relative" aria-label="Join SocioTurtle free" title="Join SocioTurtle free">
         <i class="fas fa-id-badge text-white text-xl" aria-hidden="true"></i>
       </a>
     </div>
 
     <!-- Social Media Links -->
-    <div class="flex flex-col items-center gap-3 mt-3">
+    <div class="hidden sm:flex flex-col items-center gap-3 mt-3">
       <a href="https://x.com/socioturtle" target="_blank" rel="noopener noreferrer"
         class="social-float-btn social-x flex items-center justify-center" aria-label="SocioTurtle on X" title="X">
         <i class="fab fa-x text-white text-lg" aria-hidden="true"></i>
@@ -1061,14 +1077,14 @@
   </div>
 
   <!-- Registration Modal (hidden by default) -->
-  <div id="registerModal" class="hidden fixed inset-0 z-60 flex items-center justify-center p-4" aria-hidden="true">
+  <div id="registerModal" class="hidden fixed inset-0 z-[60] flex items-center justify-center p-4" aria-hidden="true">
     <div class="modal-overlay absolute inset-0 bg-black/50" data-dismiss="modal"></div>
 
     <div class="modal-panel relative bg-white rounded-xl shadow-xl max-w-md w-full p-6 max-h-[90vh] overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="registerTitle" aria-describedby="registerDesc">
       <button class="modal-close absolute top-3 right-3 text-gray-500 hover:text-gray-800" aria-label="Close registration dialog">✕</button>
 
-      <h2 id="registerTitle" class="text-2xl font-bold mb-2">Register</h2>
-      <p id="registerDesc" class="text-sm text-gray-600 mt-0 mb-4">Enter your email id to register and get early bird discounts</p>
+      <h2 id="registerTitle" class="text-2xl font-bold mb-2">Join SocioTurtle &mdash; Free</h2>
+      <p id="registerDesc" class="text-sm text-gray-600 mt-0 mb-4">Enter your email to get free access to the SocioTurtle portal and explore our services.</p>
 
       <div id="regAlert" class="text-sm text-red-700 bg-red-50 border border-red-200 rounded-lg px-3 py-2 mb-4 hidden" aria-live="polite"></div>
 
@@ -1076,7 +1092,7 @@
         <div>
           <label for="regEmail" class="block text-sm font-medium text-gray-700">Email</label>
           <div class="flex gap-2 mt-2">
-            <input id="regEmail" name="email" type="email" required class="flex-1 min-w-0 px-4 py-3 border border-gray-300 rounded-lg" placeholder="you@example.com">
+            <input id="regEmail" name="email" type="email" autocomplete="email" required class="flex-1 min-w-0 px-4 py-3 border border-gray-300 rounded-lg" placeholder="you@example.com">
             <button type="button" id="regSendOtpBtn" class="bg-secondary text-white px-3 py-2 rounded-lg font-medium text-sm whitespace-nowrap">Send code</button>
           </div>
           <p id="regEmailError" class="text-xs text-red-600 mt-1 hidden" aria-live="polite"></p>
@@ -1085,7 +1101,7 @@
           <div id="regOtpRow" class="hidden mt-3">
             <label for="regOtpCode" class="block text-sm font-medium text-gray-700">Verification code</label>
             <div class="flex gap-2 mt-2">
-              <input id="regOtpCode" name="otp" type="text" inputmode="numeric" pattern="[0-9]*" maxlength="6" class="flex-1 min-w-0 px-4 py-3 border border-gray-300 rounded-lg" placeholder="6-digit code">
+              <input id="regOtpCode" name="otp" type="text" autocomplete="one-time-code" inputmode="numeric" pattern="[0-9]*" maxlength="6" class="flex-1 min-w-0 px-4 py-3 border border-gray-300 rounded-lg" placeholder="6-digit code">
               <button type="button" id="regVerifyOtpBtn" class="bg-primary text-white px-3 py-2 rounded-lg font-medium text-sm whitespace-nowrap">Verify</button>
             </div>
             <p id="regOtpError" class="text-xs text-red-600 mt-1 hidden" aria-live="polite"></p>
@@ -1095,6 +1111,11 @@
 
         <div id="regStatus" class="text-sm text-gray-600" aria-live="polite"></div>
       </form>
+
+      <p class="text-xs text-gray-500 mt-4">
+        By verifying your email, you agree to receive portal access and occasional updates from SocioTurtle. You can
+        unsubscribe anytime. Read our <a href="privacy.html" class="underline hover:text-primary">Privacy Policy</a>.
+      </p>
 
     </div>
   </div>

@@ -54,6 +54,21 @@ document.addEventListener("DOMContentLoaded", function () {
   if (targetPage && document.getElementById(targetPage)?.classList.contains("page")) {
     showPage(targetPage);
   }
+
+  // Other pages link to index.html#join, so arriving with that hash opens the sign-up dialog.
+  if (targetPage === "join") {
+    openRegisterModal();
+  }
+});
+
+// Join links point at #join so they still lead somewhere useful if this script fails to load.
+document.addEventListener("click", event => {
+  const trigger = event.target.closest("[data-open-register]");
+  if (!trigger) return;
+
+  event.preventDefault();
+  document.getElementById("mobile-menu").classList.add("hidden");
+  openRegisterModal();
 });
 
 function showPage(pageId) {
@@ -95,10 +110,6 @@ let _prevActiveElement = null;
 let _regOtpBusy = false;
 let _regEmailVerifyToken = null;
 let _regVerifiedEmail = null;
-
-function handleRegisterClick() {
-  openRegisterModal();
-}
 
 function openRegisterModal() {
   const modal = document.getElementById('registerModal');
